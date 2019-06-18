@@ -1,9 +1,10 @@
 body {
   background: #fff;
+  font-family: Arial;
 }
 
 .container {
-  width: 1280px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -15,7 +16,6 @@ body {
 
 .list__item {
   text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
-  font-family: Arial;
   color:  #ffffff;
   font-size: 20px;
   font-weight: 400;
@@ -24,28 +24,79 @@ body {
   background: url("../img/check.svg") no-repeat left center;
 }
 
+.title {
+  color: #445161;
+  font-size: 30px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.text {
+  color: #333333;
+  font-size: 16px;
+  line-height: 24px;
+  hyphens: auto;
+}
+
+/* header */
+
 .top-header {
   display: flex;
   justify-content: space-between;
-  padding: 50px;
+  padding: 29px 50px 44px 47px;
   background-color: #445162;
 }
 
+.top-header__wrapper {
+  margin-top: 10px;
+}
+
+.top-header__photo {
+  margin-top: 21px;
+}
+
 .top-header__title {
-  font-family: Arial;
   color:  #ffffff;
   font-size: 60px;
   font-weight: 400;
   text-align: left;
   text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
+  margin: 0;
 }
 
 .top-header__list {
-  margin: 51px 0 0 0;
+  margin: 27px 0 0 0;
 }
 
 .top-header__photo {
   background-color:  #ffffff;
   width: 469px;
   height: 214px;
+}
+
+/* about */
+
+.about {
+  padding: 44px 50px 48px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about__wrapper {
+  width: 56%;
+}
+
+.about__text {
+  margin: 25px 0 0;
+}
+
+.about__text:last-child {
+  margin: 10px 0 0;
+}
+
+.about__photo {
+  margin-top: 6px;
+  width: 430px;
+  height: 246px;
+  background: #445161;
 }
