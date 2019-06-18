@@ -315,4 +315,160 @@ body {
   font-size: 18px;
   font-weight: 700;
   padding: 10px 0;
+  cursor: pointer;
+}
+
+.price__btn:active {
+  background: #445162;
+  color: #fff;
+}
+
+/* contacts */
+
+.contacts {
+  background: #445162;
+  padding: 47px 248px 50px;
+}
+
+.contacts__title {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.contacts__wrapper {
+  display: flex;
+}
+
+.contacts__form {
+  width: 500px;
+}
+
+.contacts__input {
+  padding: 11px 0 11px 10px;
+}
+
+.contacts__input, .contacts__textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  box-sizing: border-box;
+}
+
+.contacts__textarea {
+  resize: none;
+  height: 173px;
+  padding: 11px 10px;
+}
+
+.contacts__btn {
+  display: block;
+  margin: 0 auto;
+  padding: 9px 47px;
+  cursor: pointer;
+  outline: none;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: none;
+  background: #fff;
+  border-radius: 5px;
+  color: #445162;
+}
+
+.contacts__btn:active {
+  background: #445162;
+  color: #fff;
+}
+
+.contacts__media {
+  width: 280px;
+  padding: 0 0 0 46px;
+  box-sizing: border-box;
+}
+
+.contacts__link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  display: block;
+  height: 27px;
+  line-height: 27px;
+  padding: 0 0 0 35px;
+  margin: 0 0 17px 0;
+}
+
+.contacts__link:hover {
+  color: #6887AD;
+}
+
+.skype {
+  background: url("../img/skype.svg") no-repeat left center;
+}
+.icq {
+  background: url("../img/icq.svg") no-repeat left center;
+}
+.mail {
+  background: url("../img/at.svg") no-repeat left center;
+}
+.phone {
+  background: url("../img/phone.svg") no-repeat left center;
+}
+
+.skype, .icq, .mail, .phone {
+  background-size: 27px auto;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  margin: 28px 0 0 0;
+}
+
+.social__link {
+  text-decoration: none;
+  background: #fff;
+  color: #445162;
+  font-size: 20px;
+  display: block;
+  width: 43px;
+  height: 43px;
+  line-height: 43px;
+  border-radius: 50%;
+  text-align: center;
+}
+.twitter:hover, .facebook:hover, .linkedin:hover, .google:hover, .youtube:hover {
+  color: #fff;
+}
+
+.twitter:hover {
+  background: #1ca1f2;
+}
+.facebook:hover {
+  background: #3a5a98;
+}
+.linkedin:hover {
+  background: #108dcd;
+}
+.google:hover {
+  background: #ea4335;
+}
+.youtube:hover {
+  background: #ea4335;
+}
+
+/* footer */
+
+.footer {
+  background: #f5f5f5;
+}
+
+.footer__text {
+  color: #445162;
+  font-size: 12px;
+  text-align: center;
+  margin: 0;
+  padding: 10px 0;
 }
