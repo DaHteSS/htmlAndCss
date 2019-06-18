@@ -133,3 +133,45 @@ body {
 .pluses__item:nth-child(2n) {
   margin-left: 6px;
 }
+
+/* screenshots */
+
+.screenshots {
+  padding: 45px 50px 43px;
+}
+
+.screenshots__title {
+  text-align: center;
+  margin-bottom: 23px;
+}
+
+.screenshots__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.screenshot {
+  margin: 0 0 8px 0;
+  width: 50%;
+  display: flex;
+}
+
+.screenshot__content {
+  width: 61%;
+  margin-left: 15px;
+}
+
+.screenshot__photo {
+  margin-top: 4px;
+  width: 200px;
+  height: 150px;
+  background: #445161;
+}
+
+.screenshot__title {
+  font-size: 24px;
+}
+
+.screenshot__text {
+  margin-top: 9px;
+}
