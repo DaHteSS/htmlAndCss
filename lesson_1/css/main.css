@@ -240,3 +240,79 @@ body {
   color: #989898;
   font-size: 14px;
 }
+
+/* buy, price */
+
+.buy {
+  padding: 45px 145px 52px;
+}
+
+.buy__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.buy__title {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.price {
+  padding: 12px 0 19px;
+  border-radius: 5px;
+}
+
+.price__title {
+  font-size: 24px;
+  text-align: center;
+  font-weight: 400;
+  margin: 0 0 13px 0;
+}
+
+.price__title, .price__list {
+  color: #fff;
+}
+
+.price__list {
+  font-size: 14px;
+  padding-left: 36px;
+  margin: 20px 0;
+}
+
+.price__item {
+  margin-bottom: 8px;
+}
+
+.buy__price {
+  width: 300px;
+  background: #445162;
+}
+
+.price__number, .price__btn {
+  color: #445162;
+}
+
+.price__number {
+  display: block;
+  background: #fff;
+  width: 98%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 40px;
+  padding: 10px 0;
+}
+
+.price__btn {
+  display: block;
+  text-transform: uppercase;
+  border: none;
+  background: #fff;
+  width: 86%;
+  outline: none;
+  border-radius: 5px;
+  margin: 0 auto;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 10px 0;
+}
