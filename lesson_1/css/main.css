@@ -42,6 +42,9 @@ body {
 
 .top-header__photo {
   margin-top: 21px;
+  background-color:  #ffffff;
+  width: 469px;
+  height: 214px;
 }
 
 .top-header__title {
@@ -68,12 +71,6 @@ body {
   background: url("../img/check.svg") no-repeat left center;
 }
 
-.top-header__photo {
-  background-color:  #ffffff;
-  width: 469px;
-  height: 214px;
-}
-
 /* about */
 
 .about {
@@ -94,7 +91,7 @@ body {
   margin: 10px 0 0;
 }
 
-.about__photo {
+.about__video {
   margin-top: 6px;
   width: 430px;
   height: 246px;
@@ -138,16 +135,13 @@ body {
 
 .screenshots {
   padding: 45px 50px 43px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .screenshots__title {
   text-align: center;
   margin-bottom: 23px;
-}
-
-.screenshots__wrapper {
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .screenshot {
@@ -181,6 +175,9 @@ body {
 .reviews {
   background: #f5f5f5;
   padding: 43px 50px 26px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .reviews__title {
@@ -188,20 +185,10 @@ body {
   margin-bottom: 29px;
 }
 
-.reviews__wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
 .comment {
   width: 49%;
   display: flex;
   margin-bottom: 28px;
-}
-
-.comment:nth-child(2n) {
-  margin-left: 10px;
 }
 
 .comment__wrapper {
@@ -245,10 +232,8 @@ body {
 
 .buy {
   padding: 45px 145px 52px;
-}
-
-.buy__wrapper {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-end;
 }
@@ -471,4 +456,15 @@ body {
   text-align: center;
   margin: 0;
   padding: 10px 0;
+}
+
+/* Common styles */
+
+.screenshots__title, .reviews__title, .buy__title {
+  width: 100%;
+}
+
+.price__btn:hover, .contacts__btn:hover {
+  background: #86a2c7;
+  color: #fff;
 }
