@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 960px;
+  height: 630px;
+  margin: 0 auto;
+  position: relative;
+  padding: 20px 0;
+}
+
+.one, .two, .three, .four, .five {
+  border: 2px solid #000;
+  box-sizing: border-box;
+  width: 250px;
+  height: 400px;
+  position: absolute;
+  z-index: 0;
+}
+
+.one {
+  background: #fed700;
+  top: 50px;
+  left: 50px;
+}
+
+.two {
+  background: #fee5c3;
+  top: 100px;
+  left: 100px;
+}
+
+.three {
+  background: #fea500;
+  top: 150px;
+  left: 150px;
+}
+
+.four {
+  background: #fe0000;
+  top: 200px;
+  left: 200px;
+}
+
+.five {
+  background: #008001;
+  top: 250px;
+  left: 250px;
+}
+
+.one:hover, .two:hover, .three:hover, .four:hover, .five:hover {
+  z-index: 1;
+}
