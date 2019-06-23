@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Corporate Landing Page</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <img src="img/logo.png" alt="Logo" class="logo" width="78" height="75">
+      <nav class="header__menu">
+        <ul class="header__list">
+          <li class="header__item"><a class="header__link" href="#">Home</a></li>
+          <li class="header__item"><a class="header__link" href="#">Pages</a></li>
+          <li class="header__item"><a class="header__link" href="#">Features</a></li>
+          <li class="header__item"><a class="header__link" href="#">Extensions</a></li>
+          <li class="header__item"><a class="header__link" href="#">Tutorials</a></li>
+          <li class="header__item"><a class="header__link" href="#">Contact us</a></li>
+        </ul>
+      </nav>
+      <div class="media">
+        <a href="header__media facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="header__media twitter"><i class="fab fa-twitter"></i></a>
+        <a href="header__media linkedin"><i class="fab fa-linkedin-in"></i></a>
+        <a href="header__media skype"><i class="fab fa-skype"></i></a>
+      </div>
+    </div>
+    <!-- Использую для полосы div, потому что hr используется для разделения текста, в основном, об этом раньше не знал -->
+    <div class="header__line"></div>
+    <div class="container">
+      <h1 class="header__title">Creatives</h1>
+      <span class="header__text">Power by dahtess.ru</span>
+      <span class="header__scroll">Scroll Down</span>
+      <button class="header__btn"><i class="fas fa-chevron-down"></i></button>
+    </div>
+  </header>
+  <main class="main">
+    <section class="features">
+      <div class="container">
+        <!-- <div class="features__letter letter">w</div> -->
+        <h2 class="features__title">We Are An Awesome Agency</h2>
+        <ul class="features__list">
+          <li class="features__item">
+            <div class="features__cercle">
+                <i class="far fa-edit"></i>
+            </div>
+            <h3 class="features__title">Feature one</h3>
+            <p class="features__text">Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus</p>
+          </li>
+          <li class="features__item">
+            <div class="features__cercle">
+                <i class="far fa-edit"></i>
+            </div>
+            <h3 class="features__title">Feature two</h3>
+            <p class="features__text">Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus</p>
+          </li>
+          <li class="features__item">
+            <div class="features__cercle">
+                <i class="fas fa-search"></i>
+            </div>
+            <h3 class="features__title">Feature three</h3>
+            <p class="features__text">Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus</p>
+          </li>
+          <li class="features__item">
+            <div class="features__cercle">
+                <i class="far fa-comment"></i>
+            </div>
+            <h3 class="features__title">Feature four</h3>
+            <p class="features__text">Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="article">
+      <!-- сделать для него bgi с картинкой -->
+      <article class="news">
+        <span class="article__time">Jan 4, 2016   |   In Culture</span>
+        <h3 class="article__title">Akita Inu Dog</h3>
+        <p class="article__text">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+        <p class="article__text">Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere consectetur </p>
+        <div class="article__bg article__bg_top"></div>
+      </article>
+      <article class="news">
+        <span class="article__time">Jan 4, 2016   |   In Culture</span>
+        <h3 class="article__title">Akita Inu Dog</h3>
+        <p class="article__text">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+        <p class="article__text">Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere consectetur </p>
+        <div class="article__bg article__bg_bottom"></div>
+      </article>
+    </section>
+    <section class="blog">
+        <div class="container">
+          <!-- <div class="blog__letter letter">b</div> -->
+          <h2 class="blog__title">Let's blog</h2>
+          <p class="blog__subject">We love clean design and advanced digital solutions.</p>
+          <div class="blog__list">
+            <figure class="blog__post">
+              <img src="img/blog__post_1.jpg" alt="Blog Post 1">
+              <figcaption class="blog__desc">
+                <h3 class="blog__title">Fresh Summer Campaign</h3>
+                <p class="blog__text">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+              </figcaption>
+            </figure>
+            <figure class="blog__post">
+              <img src="img/blog__post_2.jpg" alt="Blog Post 2">
+              <figcaption class="blog__desc">
+                <h3 class="blog__title">Fresh Summer Campaign</h3>
+                <p class="blog__text">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+              </figcaption>
+            </figure>
+            <figure class="blog__post">
+              <img src="img/blog__post_3.jpg" alt="Blog Post 3">
+              <figcaption class="blog__desc">
+                <h3 class="blog__title">Fresh Summer Campaign</h3>
+                <p class="blog__text">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+              </figcaption>
+            </figure>
+            <figure class="blog__post">
+              <img src="img/blog__post_4.jpg" alt="Blog Post 4">
+              <figcaption class="blog__desc">
+                <h3 class="blog__title">Fresh Summer Campaign</h3>
+                <p class="blog__text">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+    </section>
+    <div class="desc">
+      <div class="desc__block">
+        <i class="far fa-edit"></i>
+        <p class="desc__text">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+      </div>
+      <div class="desc__block">
+        <i class="far fa-edit"></i>
+        <p class="desc__text">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+      </div>
+    </div>
+    <section class="app">
+      <div class="container">
+        <div class="app__content">
+          <h3 class="app__title">Akita Inu Dog</h3>
+          <p class="app__text">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+          <div class="app__line app__line_top">
+            <span class="app__desc">Fully Responsive Design</span>
+          </div>
+          <div class="app__line app__line_middle">
+            <span class="app__desc">High Quality Code</span>
+          </div>
+          <div class="app__line app__line_bottom">
+            <span class="app__desc">Different Headers & Layout</span>
+          </div>
+        </div>
+        <img src="img/app__img.jpg" alt="Mobile App" class="app__img">
+      </div>
+    </section>
+    <section class="team">
+      <div class="container">
+        <!-- <div class="team_letter letter">t</div> -->
+        <h2 class="team__title">Our Team</h2>
+        <p class="team__subject">sales long tail influencer pitch release niche market.</p>
+        <figure class="team__item">
+          <img src="img/team__photo_1" alt="Photo 1" class="team__photo">
+          <figcaption class="team__desc">
+            <span class="team__name">John Snow</span>
+            <span class="team__position">seo</span>
+          </figcaption>
+        </figure>
+        <figure class="team__item">
+          <img src="img/team__photo_2" alt="Photo 2" class="team__photo">
+          <figcaption class="team__desc">
+            <span class="team__name">Dahtess Jensen</span>
+            <span class="team__position">WebDeveloper</span>
+          </figcaption>
+        </figure>
+        <figure class="team__item">
+          <img src="img/team__photo_3" alt="Photo 3" class="team__photo">
+          <figcaption class="team__desc">
+            <span class="team__name">David Smith</span>
+            <span class="team__position">Photographer</span>
+          </figcaption>
+        </figure>
+        <figure class="team__item">
+          <img src="img/team__photo_4" alt="Photo 4" class="team__photo">
+          <figcaption class="team__desc">
+            <span class="team__name">Lady Sansa</span>
+            <span class="team__position">Photographer</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+    <section class="callback">
+      <!-- C -->
+      <h2 class="callback__title">We’d love to hear about your project.</h2>
+      <form class="callback__form" method="POST">
+        <input type="text" class="callback__input">
+        <input type="email" class="callback__input">
+        <input type="tel" class="callback__input">
+        <textarea class="callback__textarea"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+    <div class="map" id="map"></div>
+  </main>
+  <footer class="footer">
+    <p class="footer__copyright">&copy; 2016 dahtess.ru – All Right Reserved</p>
+  </footer>
+  <!-- map styles -->
+  <script src="js/map.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8rsYUn2tpxZDhmaS3vOeGpuhxI7CTE1A&callback=initMap" async defer></script>
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/583c26b98d.js"></script>
+</body>
+</html>

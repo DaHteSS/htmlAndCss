@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* common styles */
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* header */
+
+.header {
+  background: url('../img/header__bg.jpg') no-repeat top center;
+  height: 880px;
+}
+
+/* map */
+
+.map {
+  height: 332px;
+  width: 100%;
+}
