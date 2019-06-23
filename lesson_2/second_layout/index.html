@@ -44,28 +44,28 @@
         <h2 class="features__title">We Are An Awesome Agency</h2>
         <ul class="features__list">
           <li class="features__item">
-            <div class="features__cercle">
+            <div class="features__circle">
                 <i class="far fa-edit"></i>
             </div>
             <h3 class="features__topic">Feature one</h3>
             <p class="features__text">Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus</p>
           </li>
           <li class="features__item">
-            <div class="features__cercle">
+            <div class="features__circle">
                 <i class="far fa-edit"></i>
             </div>
             <h3 class="features__topic">Feature two</h3>
             <p class="features__text">Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus</p>
           </li>
           <li class="features__item">
-            <div class="features__cercle">
+            <div class="features__circle">
                 <i class="fas fa-search"></i>
             </div>
             <h3 class="features__topic">Feature three</h3>
             <p class="features__text">Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus</p>
           </li>
           <li class="features__item">
-            <div class="features__cercle">
+            <div class="features__circle">
                 <i class="far fa-comment"></i>
             </div>
             <h3 class="features__topic">Feature four</h3>
@@ -76,20 +76,22 @@
     </section>
     <section class="article">
       <!-- сделать для него bgi с картинкой -->
-      <article class="news">
-        <span class="article__time">Jan 4, 2016   |   In Culture</span>
-        <h3 class="article__title">Akita Inu Dog</h3>
-        <p class="article__text">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-        <p class="article__text">Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere consectetur </p>
+      <div class="container flex article__flex">
+        <article class="news">
+          <span class="article__time">Jan 4, 2016   |   In Culture</span>
+          <h3 class="article__title">Akita Inu Dog</h3>
+          <p class="article__text">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+          <p class="article__text">Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere consectetur </p>
+        </article>
         <div class="article__bg article__bg_top"></div>
-      </article>
-      <article class="news">
-        <span class="article__time">Jan 4, 2016   |   In Culture</span>
-        <h3 class="article__title">Akita Inu Dog</h3>
-        <p class="article__text">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-        <p class="article__text">Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere consectetur </p>
         <div class="article__bg article__bg_bottom"></div>
-      </article>
+        <article class="news">
+          <span class="article__time">Jan 4, 2016   |   In Culture</span>
+          <h3 class="article__title">Akita Inu Dog</h3>
+          <p class="article__text">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+          <p class="article__text">Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere consectetur </p>
+        </article>
+      </div>
     </section>
     <section class="blog">
         <div class="container">
@@ -129,13 +131,15 @@
         </div>
     </section>
     <div class="desc">
-      <div class="desc__block">
-        <i class="far fa-edit"></i>
-        <p class="desc__text">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-      </div>
-      <div class="desc__block">
-        <i class="far fa-edit"></i>
-        <p class="desc__text">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+      <div class="container desc__flex flex">
+        <div class="desc__block">
+          <i class="far fa-edit desc__icon"></i>
+          <p class="desc__text">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+        </div>
+        <div class="desc__block">
+          <i class="far fa-edit desc__icon"></i>
+          <p class="desc__text">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+        </div>
       </div>
     </div>
     <section class="app">
@@ -157,33 +161,33 @@
       </div>
     </section>
     <section class="team">
-      <div class="container">
+      <div class="container flex team__flex">
         <!-- <div class="team_letter letter">t</div> -->
         <h2 class="team__title">Our Team</h2>
         <p class="team__subject">sales long tail influencer pitch release niche market.</p>
         <figure class="team__item">
-          <img src="img/team__photo_1" alt="Photo 1" class="team__photo">
+          <img src="img/team__photo_1.jpg" alt="Photo 1" class="team__photo">
           <figcaption class="team__desc">
             <span class="team__name">John Snow</span>
-            <span class="team__position">seo</span>
+            <span class="team__position">SEO</span>
           </figcaption>
         </figure>
         <figure class="team__item">
-          <img src="img/team__photo_2" alt="Photo 2" class="team__photo">
+          <img src="img/team__photo_2.jpg" alt="Photo 2" class="team__photo">
           <figcaption class="team__desc">
             <span class="team__name">Dahtess Jensen</span>
             <span class="team__position">WebDeveloper</span>
           </figcaption>
         </figure>
         <figure class="team__item">
-          <img src="img/team__photo_3" alt="Photo 3" class="team__photo">
+          <img src="img/team__photo_3.jpg" alt="Photo 3" class="team__photo">
           <figcaption class="team__desc">
             <span class="team__name">David Smith</span>
             <span class="team__position">Photographer</span>
           </figcaption>
         </figure>
         <figure class="team__item">
-          <img src="img/team__photo_4" alt="Photo 4" class="team__photo">
+          <img src="img/team__photo_4.jpg" alt="Photo 4" class="team__photo">
           <figcaption class="team__desc">
             <span class="team__name">Lady Sansa</span>
             <span class="team__position">Photographer</span>
@@ -205,7 +209,7 @@
     <div class="map" id="map"></div>
   </main>
   <footer class="footer">
-    <p class="footer__copyright">&copy; 2016 dahtess.ru – All Right Reserved</p>
+    <p class="footer__copyright">&copy; 2019 dahtess.ru – All Right Reserved</p>
   </footer>
   <!-- map styles -->
   <script src="js/map.js"></script>
