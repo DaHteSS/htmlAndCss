@@ -10,11 +10,11 @@
 </head>
 <body>
   <header class="header">
-    <div class="container">
-      <img src="img/logo.png" alt="Logo" class="logo" width="78" height="75">
+    <div class="container header__flex_top flex">
+      <img src="img/logo.png" alt="Logo" class="header__logo" width="78" height="75">
       <nav class="header__menu">
         <ul class="header__list">
-          <li class="header__item"><a class="header__link" href="#">Home</a></li>
+          <li class="header__item"><a class="header__link header__link_active" href="#">Home</a></li>
           <li class="header__item"><a class="header__link" href="#">Pages</a></li>
           <li class="header__item"><a class="header__link" href="#">Features</a></li>
           <li class="header__item"><a class="header__link" href="#">Extensions</a></li>
@@ -23,15 +23,15 @@
         </ul>
       </nav>
       <div class="media">
-        <a href="header__media facebook"><i class="fab fa-facebook-f"></i></a>
-        <a href="header__media twitter"><i class="fab fa-twitter"></i></a>
-        <a href="header__media linkedin"><i class="fab fa-linkedin-in"></i></a>
-        <a href="header__media skype"><i class="fab fa-skype"></i></a>
+        <a href="#" class="header__media facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="header__media twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="header__media linkedin"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="header__media skype"><i class="fab fa-skype"></i></a>
       </div>
     </div>
     <!-- Использую для полосы div, потому что hr используется для разделения текста, в основном, об этом раньше не знал -->
     <div class="header__line"></div>
-    <div class="container">
+    <div class="container header__flex_bottom flex">
       <h1 class="header__title">Creatives</h1>
       <span class="header__text">Power by dahtess.ru</span>
       <span class="header__scroll">Scroll Down</span>
@@ -41,35 +41,34 @@
   <main class="main">
     <section class="features">
       <div class="container">
-        <!-- <div class="features__letter letter">w</div> -->
         <h2 class="features__title">We Are An Awesome Agency</h2>
         <ul class="features__list">
           <li class="features__item">
             <div class="features__cercle">
                 <i class="far fa-edit"></i>
             </div>
-            <h3 class="features__title">Feature one</h3>
+            <h3 class="features__topic">Feature one</h3>
             <p class="features__text">Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus</p>
           </li>
           <li class="features__item">
             <div class="features__cercle">
                 <i class="far fa-edit"></i>
             </div>
-            <h3 class="features__title">Feature two</h3>
+            <h3 class="features__topic">Feature two</h3>
             <p class="features__text">Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus</p>
           </li>
           <li class="features__item">
             <div class="features__cercle">
                 <i class="fas fa-search"></i>
             </div>
-            <h3 class="features__title">Feature three</h3>
+            <h3 class="features__topic">Feature three</h3>
             <p class="features__text">Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus</p>
           </li>
           <li class="features__item">
             <div class="features__cercle">
                 <i class="far fa-comment"></i>
             </div>
-            <h3 class="features__title">Feature four</h3>
+            <h3 class="features__topic">Feature four</h3>
             <p class="features__text">Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus</p>
           </li>
         </ul>
@@ -120,7 +119,7 @@
               </figcaption>
             </figure>
             <figure class="blog__post">
-              <img src="img/blog__post_4.jpg" alt="Blog Post 4">
+              <img src="img/blog__post_1.jpg" alt="Blog Post 4">
               <figcaption class="blog__desc">
                 <h3 class="blog__title">Fresh Summer Campaign</h3>
                 <p class="blog__text">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
@@ -154,7 +153,7 @@
             <span class="app__desc">Different Headers & Layout</span>
           </div>
         </div>
-        <img src="img/app__img.jpg" alt="Mobile App" class="app__img">
+        <img src="img/app__img.png" alt="Mobile App" class="app__img">
       </div>
     </section>
     <section class="team">
