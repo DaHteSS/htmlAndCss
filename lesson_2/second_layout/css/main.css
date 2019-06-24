@@ -272,6 +272,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "GothamBook";
 }
 
+.article__line {
+  padding: 0 10px;
+}
+
 .article__title {
   text-transform: uppercase;
   font-size: 25px;
