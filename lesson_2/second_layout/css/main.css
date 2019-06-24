@@ -90,6 +90,11 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
   border-bottom: 6px solid transparent;
   font-family: "Open Sans";
+  transition: all 0.2s ease-in-out;
+}
+
+.header__link:hover {
+  color: #11749e;
 }
 
 .header__link:hover, .header__link_active {
@@ -105,6 +110,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   font-size: 18px;
   padding: 0 10px;
+  transition: all 0.3s ease-out;
 }
 
 .header__media:hover {
@@ -159,6 +165,11 @@ h1, h2, h3, h4, h5, h6 {
 .header__btn:hover {
   color: #11749e;
   border-color: #11749e;
+}
+
+.header__copyright {
+  color: inherit;
+  text-decoration: none;
 }
 
 /* features */
@@ -604,4 +615,8 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   color: #fff;
   padding: 40px 0;
+}
+
+.footer__link {
+  color: inherit;
 }
