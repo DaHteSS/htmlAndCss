@@ -107,6 +107,10 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 10px;
 }
 
+.header__media:hover {
+  color: #11749e;
+}
+
 .header__line {
   width: 100%;
   height: 1px;
@@ -140,14 +144,21 @@ h1, h2, h3, h4, h5, h6 {
 
 .header__btn {
   color: #fff;
-  font-size: 20px;
-  background: transparent;
-  border: 1px solid #fff;
+  box-sizing: border-box;
+  font-size: 26px;
+  border: 2px solid #fff;
   border-radius: 50%;
   width: 65px;
   height: 65px;
   line-height: 65px;
+  text-decoration: none;
   margin: 0 auto 100px;
+  transition: color 0.3s ease-in;
+}
+
+.header__btn:hover {
+  color: #11749e;
+  border-color: #11749e;
 }
 
 /* features */
@@ -193,6 +204,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50%;
   background: #2e85aa;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .features__topic {
@@ -215,6 +227,17 @@ h1, h2, h3, h4, h5, h6 {
 
 .article__flex {
   flex-wrap: wrap;
+  align-items: center;
+}
+
+.row {
+  background: #222222;
+  color: #fff;
+}
+
+.row:last-child {
+  background: #f3f3f3;
+  color: #222222;
 }
 
 .news {
@@ -234,6 +257,7 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   background: url("../img/article__bg_1.jpg") no-repeat left top;
 }
+
 .article__bg_bottom:after {
   content: '';
   width: 799px;
@@ -241,6 +265,85 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
   position: absolute;
   background: url("../img/article__bg_2.jpg") no-repeat right top;
+}
+
+.article__time {
+  font-size: 13px;
+  font-family: "GothamBook";
+}
+
+.article__title {
+  text-transform: uppercase;
+  font-size: 25px;
+}
+
+.article__text {
+  font-family: "GothamBook";
+  font-size: 15px;
+}
+
+.news {
+  box-sizing: border-box;
+}
+
+.news_top {
+  padding: 0 50px 0 0;
+}
+
+.news_bottom {
+  padding: 0 0 0 50px;
+}
+
+/* blog */
+
+.blog {
+  padding: 160px 0 100px;
+  text-align: center;
+}
+
+.blog__title {
+  font-size: 38px;
+  color: #222222;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.blog__title:before {
+  content: 'B';
+  opacity: 0.1;
+  font-size: 200px;
+  position: absolute;
+  top: -95px;
+  left: 44%;
+}
+
+.blog__subject {
+  font-family: "GothamBook";
+  color: #222222;
+  font-size: 30px;
+  margin: 110px 0 80px;
+}
+
+.blog__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog__post {
+  margin: 0;
+}
+
+.blog__topic {
+  font-size: 18px;
+  color: #11749e;
+  text-transform: uppercase;
+}
+
+.blog__text {
+  font-size: 15px;
+  font-family: "GothamBook";
+  color: #222222;
+  padding: 0 15px;
 }
 
 /* desc */
@@ -265,6 +368,67 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 70px 0 30px;
   font-size: 14px;
   font-family: "GothamBook";
+}
+
+/* app */
+
+.app {
+  background: url("../img/app__bg.jpg") no-repeat center top;
+  padding: 100px 0;
+}
+
+.app__flex {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app__content {
+  width: 470px;
+}
+
+.app__title {
+  font-size: 25px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.app__text {
+  color: #fff;
+  font-size: 15px;
+  font-family: "GothamBook";
+  margin: 43px 0 70px;
+  padding: 0 60px 0 0;
+}
+
+.app__line {
+  background: #11749e;
+  height: 38px;
+  padding-left: 20px;
+  line-height: 38px;
+  margin-bottom: 24px;
+}
+
+.app__line_top {
+  width: 370px;
+}
+
+.app__line_middle {
+  width: 400px;
+}
+
+.app__line_bottom {
+  width: 430px;
+}
+
+.app__desc {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 15px;
+  font-family: "GothamMedium";
+}
+
+.app__img {
+  margin: 0 100px 0 0;
 }
 
 /* team */
@@ -335,6 +499,85 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 15px;
   font-family: "GothamMedium";
   font-weight: 700;
+}
+
+/* callback */
+
+.callback {
+  background: url("../img/callback__bg.jpg") no-repeat center top;
+  padding: 220px 0 100px;
+}
+
+.callback__title {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 38px;
+  text-align: center;
+  position: relative;
+  margin: 0 0 150px 0;
+}
+
+.callback__title:before {
+  content: 'C';
+  color: #fff;
+  opacity: 0.2;
+  font-size: 247px;
+  position: absolute;
+  top: -125px;
+  left: 43%;
+}
+
+.callback__form {
+  font-family: "GothamBook";
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.callback__input {
+  width: 370px;
+  height: 48px;
+}
+
+.callback__textarea {
+  height: 150px;
+  width: 100%;
+  margin: 40px 0;
+  resize: none;
+  padding-top: 15px;
+}
+
+.callback__input, .callback__textarea  {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  padding-left: 20px;
+}
+
+.callback__input::placeholder, .callback__textarea::placeholder {
+  color: #fff;
+}
+
+.callback__btn {
+  margin: 0 auto;
+  background: #11749e;
+  color: #fff;
+  font-size: 24px;
+  text-transform: uppercase;
+  border: 2px solid transparent;
+  padding: 15px 30px;
+  font-family: "GothamMedium";
+  transition: all 0.5s ease-out;
+  cursor: pointer;
+}
+
+.callback__btn:hover {
+  background: transparent;
+  border: 2px solid #fff;
+}
+
+.callback__input:focus, .callback__textarea:focus, .callback__btn:focus {
+  outline: none;
 }
 
 /* map */
