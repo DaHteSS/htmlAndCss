@@ -226,6 +226,7 @@ body {
 .comment__author {
   color: #989898;
   font-size: 14px;
+  text-decoration: none;
 }
 
 /* buy, price */
@@ -261,8 +262,9 @@ body {
 
 .price__list {
   font-size: 14px;
-  padding-left: 36px;
+  padding-left: 25px;
   margin: 20px 0;
+  list-style-position: inside;
 }
 
 .price__item {
@@ -291,21 +293,15 @@ body {
 .price__btn {
   display: block;
   text-transform: uppercase;
-  border: none;
   background: #fff;
   width: 86%;
-  outline: none;
   border-radius: 5px;
   margin: 0 auto;
+  text-align: center;
   font-size: 18px;
   font-weight: 700;
   padding: 10px 0;
-  cursor: pointer;
-}
-
-.price__btn:active {
-  background: #445162;
-  color: #fff;
+  text-decoration: none;
 }
 
 /* contacts */
@@ -389,6 +385,10 @@ body {
   color: #6887AD;
 }
 
+.contacts__link:active {
+  color: rgb(74, 103, 138);
+}
+
 .skype {
   background: url("../img/skype.svg") no-repeat left center;
 }
@@ -444,6 +444,22 @@ body {
   background: #ea4335;
 }
 
+.twitter:active {
+  background: #188ad1;
+}
+.facebook:active {
+  background: #2b4374;
+}
+.linkedin:active {
+  background: #0c71a3;
+}
+.google:active {
+  background: #b6362a;
+}
+.youtube:active {
+  background: #b6362a;
+}
+
 /* footer */
 
 .footer {
@@ -465,6 +481,10 @@ body {
 }
 
 .price__btn:hover, .contacts__btn:hover {
-  background: #86a2c7;
+  background: #6e98cf;
   color: #fff;
+}
+
+.price__btn:active, .contacts__btn:active {
+  background: #48668d;
 }

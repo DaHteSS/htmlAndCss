@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <title>Corporate Landing Page</title>
@@ -11,7 +12,7 @@
 <body>
   <header class="header">
     <div class="container header__flex_top flex">
-      <img src="img/logo.png" alt="Logo" class="header__logo" width="78" height="75">
+      <a href="#" class="header__logo"></a>
       <nav class="header__menu">
         <ul class="header__list">
           <li class="header__item"><a class="header__link header__link_active" href="#">Home</a></li>
@@ -29,11 +30,9 @@
         <a href="#" class="header__media skype"><i class="fab fa-skype"></i></a>
       </div>
     </div>
-    <!-- Использую для полосы div, потому что hr используется для разделения текста, в основном, об этом раньше не знал -->
-    <div class="header__line"></div>
     <div class="container header__flex_bottom flex">
       <h1 class="header__title">Creatives</h1>
-      <span class="header__text">Power by dahtess.ru</span>
+      <span class="header__text">Power by <a href="https://dahtess.ru" class="header__copyright">dahtess.ru</a></span>
       <span class="header__scroll">Scroll Down</span>
       <a href="#" class="header__btn"><i class="fas fa-chevron-down"></i></a>
     </div>
@@ -44,30 +43,18 @@
         <h2 class="features__title">We Are An Awesome Agency</h2>
         <ul class="features__list">
           <li class="features__item">
-            <div class="features__circle">
-                <i class="far fa-edit"></i>
-            </div>
             <h3 class="features__topic">Feature one</h3>
             <p class="features__text">Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus</p>
           </li>
           <li class="features__item">
-            <div class="features__circle">
-                <i class="far fa-edit"></i>
-            </div>
             <h3 class="features__topic">Feature two</h3>
             <p class="features__text">Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus</p>
           </li>
           <li class="features__item">
-            <div class="features__circle">
-                <i class="fas fa-search"></i>
-            </div>
             <h3 class="features__topic">Feature three</h3>
             <p class="features__text">Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus</p>
           </li>
           <li class="features__item">
-            <div class="features__circle">
-                <i class="far fa-comment"></i>
-            </div>
             <h3 class="features__topic">Feature four</h3>
             <p class="features__text">Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus</p>
           </li>
@@ -78,24 +65,24 @@
       <!-- сделать для него bgi с картинкой -->
       <div class="row">
         <div class="container flex article__flex">
-          <article class="news news_top">
-            <span class="article__time">Jan 4, 2016   |   In Culture</span>
+          <div class="news news_top">
+            <span class="article__time">Jan 4, 2016 <span class="article__line">|</span> In Culture</span>
             <h3 class="article__title">Akita Inu Dog</h3>
             <p class="article__text">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
             <p class="article__text">Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere consectetur </p>
-          </article>
+          </div>
           <div class="article__bg article__bg_top"></div>
         </div>
       </div>
       <div class="row">
         <div class="container flex article__flex">
           <div class="article__bg article__bg_bottom"></div>
-          <article class="news news_bottom">
-            <span class="article__time">Jan 4, 2016   |   In Culture</span>
+          <div class="news news_bottom">
+            <span class="article__time">Jan 4, 2016 <span class="article__line">|</span> In Culture</span>
             <h3 class="article__title">Akita Inu Dog</h3>
             <p class="article__text">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
             <p class="article__text">Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere consectetur </p>
-          </article>
+          </div>
         </div>
       </div>
     </section>
@@ -153,15 +140,9 @@
         <div class="app__content">
           <h3 class="app__title">Akita Inu Dog</h3>
           <p class="app__text">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-          <div class="app__line app__line_top">
-            <span class="app__desc">Fully Responsive Design</span>
-          </div>
-          <div class="app__line app__line_middle">
-            <span class="app__desc">High Quality Code</span>
-          </div>
-          <div class="app__line app__line_bottom">
-            <span class="app__desc">Different Headers & Layout</span>
-          </div>
+          <span class="app__line app__line_top">Fully Responsive Design</span>
+          <span class="app__line app__line_middle">High Quality Code</span>
+          <span class="app__line app__line_bottom">Different Headers & Layout</span>
         </div>
         <img src="img/app__img.png" alt="Mobile App" width="318" height="650" class="app__img">
       </div>
@@ -216,7 +197,7 @@
     <div class="map" id="map"></div>
   </main>
   <footer class="footer">
-    <p class="footer__copyright">&copy; 2019 dahtess.ru – All Right Reserved</p>
+    <p class="footer__copyright">&copy; 2019 <a href="https://dahtess.ru" class="footer__link">dahtess.ru</a> – All Right Reserved</p>
   </footer>
   <!-- map styles -->
   <script src="js/map.js"></script>
