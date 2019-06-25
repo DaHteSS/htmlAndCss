@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'GothamBold';
-    src: url('fonts/GothamBold.eot');
-    src: url('fonts/GothamBold.eot') format('embedded-opentype'),
-         url('fonts/GothamBold.woff2') format('woff2'),
-         url('fonts/GothamBold.woff') format('woff'),
-         url('fonts/GothamBold.ttf') format('truetype'),
-         url('fonts/GothamBold.svg#GothamBold') format('svg');
-}

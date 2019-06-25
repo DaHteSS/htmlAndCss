@@ -354,21 +354,15 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 
-.article__bg_top:after {
-  content: '';
-  width: 799px;
-  height: 100%;
-  position: absolute;
+.article__bg_top{
   background: url("../img/article__bg_1.jpg") no-repeat left top;
+  background-position: 70% 10%;
 }
 
-.article__bg_bottom:after {
-  content: '';
-  width: 799px;
-  height: 100%;
+.article__bg_bottom {
   right: 0;
-  position: absolute;
   background: url("../img/article__bg_2.jpg") no-repeat right top;
+  background-position: 40% 50%;
 }
 
 .article__time {
