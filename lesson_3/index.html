@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Верстальщик Даниил Шемелин | Портфолио</title>
+</head>
+<body>
+  <header class="header">
+    <!-- Пока что не планирую добавлять слайдер на данную страницу -->
+    <!-- <div class="slider">
+      <div class="slide"></div>
+    </div> -->
+    <div class="container flex header__flex">
+      <article class="about">
+        <h2 class="about__title">about me</h2>
+        <p class="about__text">Разработкой стал увлекаться ещё в школе, а это было больше <span class="about__desc">шести</span> лет назад. За 
+        это время я успел раз 10 бросить и снова начать писать код, потому что просто не могу без этого. В последний год я стал больше создавать. Появились 
+        свои проекты.</p>
+        <p class="about__text">Успел поработать <span class="about__desc">html-верстальщиком</span> / <span class="about__desc">Fronte-end разработчиком</span> 
+        в достаточно крупной компании и <span class="about__desc">каждый день</span> я изучая что-то новое и совершенствую свои навыки в том, что уже <span class="about__desc">умею</span>.</p>
+        <a href="#callback" class="about__link">Написать</a>
+      </article>
+      <figure class="myself">
+        <img src="img/myself__photo.jpg" alt="Это моя фотография" class="myself__photo" width="340" height="340">
+        <figcaption class="myself__info flex">
+          <h1 class="myself__topic">Даниил Шемелин</h1>
+          <span class="myself__position">Front-End Developer</span>
+          <a href="https://vk.com/ldahtessl" target="_blank" class="myself__link vk"></a>
+          <a href="https://www.instagram.com/valkalajka/" target="_blank" class="myself__link instagram"></a>
+          <a href="https://github.com/DaHteSS" target="_blank" class="myself__link github"></a>
+        </figcaption>
+      </figure>
+      <!-- <div class="slider__nav">
+        <ul class="slider__list">
+          <li class="slider__dots"><a href="#" class="slider__link"></a></li>
+          <li class="slider__dots"><a href="#" class="slider__link"></a></li>
+          <li class="slider__dots"><a href="#" class="slider__link"></a></li>
+          <li class="slider__dots"><a href="#" class="slider__link"></a></li>
+        </ul>
+      </div> -->
+    </div>
+  </header>
+  <main class="main">
+    <section class="portfolio">
+      <div class="container">
+        <h2 class="portfolio__title">My portfolio</h2>
+        <p class="portfolio__subject">Все эти работы выполнил я ;)</p>
+        <ul class="portfolio__list">
+          <li class="portfolio__item">
+            <a href="#" class="portfolio__link portfolio__link_active">Все</a>
+          </li>
+          <li class="portfolio__item">
+            <a href="#" class="portfolio__link">Готовые</a>
+          </li>
+          <li class="portfolio__item">
+            <a href="#" class="portfolio__link">В процессе</a>
+          </li>
+        </ul>
+        <div class="portfolio__slider flex">
+          <!-- К сожалению, ещё не умею добавлять анимацию через JS, поэтому при наведении блок появляется резко :с ) -->
+          <div class="slider__content">
+            <img src="img/slider__img_1.jpg" alt="Img" width="256" height="256" class="portfolio__img">
+            <div class="slider__desc">
+              <a href="https://dahtess.ru/creatives" target="_blank" class="slider__link"></a>
+              <h2 class="slider__topic">creatives</h2>
+            </div>
+          </div>
+          <div class="slider__content">
+            <img src="img/slider__img_2.jpg" alt="Img" width="256" height="256" class="portfolio__img">
+            <div class="slider__desc">
+              <a href="https://dahtess.ru/interior" target="_blank" class="slider__link"></a>
+              <h2 class="slider__topic">interior</h2>
+            </div>
+          </div>
+          <div class="slider__content">
+            <img src="img/slider__img_3.jpg" alt="Img" width="256" height="256" class="portfolio__img">
+            <div class="slider__desc">
+              <a href="https://dahtess.ru/merkury" target="_blank" class="slider__link"></a>
+              <h2 class="slider__topic">merkury</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="skills">
+      <div class="container flex skills__flex">
+        <h2 class="skills_title">My skills</h2>
+        <p class="skills__subject">Я знаю данные технологии, потому что обучаюсь каждый день!</p>
+        <div class="skill">
+          <div class="skill__line html"></div>
+          <span class="skill__title">html5</span>
+          <p class="skill__desc">Включая семантику</p>
+        </div>
+        <div class="skill">
+          <div class="skill__line css"></div>
+          <span class="skill__title">css3</span>
+          <p class="skill__desc">Умею делать красиво</p>
+        </div>
+        <div class="skill">
+          <div class="skill__line js"></div>
+          <span class="skill__title">js</span>
+          <p class="skill__desc">Только начинаю</p>
+        </div>
+        <div class="skill">
+          <div class="skill__line bootstrap"></div>
+          <span class="skill__title">Bootstrap4</span>
+          <p class="skill__desc">Только сетка, только хардкор</p>
+        </div>
+        <div class="skill">
+          <div class="skill__line webpack"></div>
+          <span class="skill__title">webpack</span>
+          <p class="skill__desc">Проект сам себя не соберёт...</p>
+        </div>
+        <div class="skill">
+          <div class="skill__line preprocessor"></div>
+          <span class="skill__title">preprocessors</span>
+          <p class="skill__desc">Такие как PUG, LESS, SCSS</p>
+        </div>
+      </div>
+    </section>
+    <div class="experience">
+      <div class="container flex experience__flex">
+        <section class="experience__education education">
+          <h2 class="experience__title">Образование</h2>
+          <p class="experience__subject">Мои университеты и специальности</p>
+          <div class="experience__block experience__block_left">
+              <h3 class="experience__topic">мпу</h3>
+              <p class="experience__desc">Информационные системы и технологии</p>
+              <span class="experience__time">Сентябрь, 2015 - Апрель, 2016</span>
+          </div>
+          <div class="experience__block experience__block_left">
+              <h3 class="experience__topic">мпу</h3>
+              <p class="experience__desc">Информатика и вычислительная техника</p>
+              <span class="experience__time">Сентябрь, 2016 - Май, 2017</span>
+          </div>
+          <div class="experience__block experience__block_left">
+              <h3 class="experience__topic">мтуси</h3>
+              <p class="experience__desc">Информационные системы и технологии</p>
+              <span class="experience__time">Сентябрь, 2017 - Апрель, 2022</span>
+          </div>
+        </section>
+        <section class="experience__work work">
+          <h2 class="experience__title">Опыт работы</h2>
+          <p class="experience__subject">Да-да, я тут работал</p>
+          <div class="experience__block experience__block_right">
+              <h3 class="experience__topic">ООО "Макдоналдс"</h3>
+              <p class="experience__desc">Член бригады</p>
+              <span class="experience__time">Декабрь, 2014 - Июнь, 2015</span>
+          </div>
+          <div class="experience__block experience__block_right">
+              <h3 class="experience__topic">АО Тинькофф Банк</h3>
+              <p class="experience__desc">Специалист отдела обработки данных</p>
+              <span class="experience__time">Октябрь, 2017 - Апрель, 2018</span>
+          </div>
+          <div class="experience__block experience__block_right">
+              <h3 class="experience__topic">Money4Leads</h3>
+              <p class="experience__desc">Front-End разработчик</p>
+              <span class="experience__time">Июнь, 2018 - Декабрь, 2018</span>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container flex footer__flex">
+      <div class="footer__contacts">
+        <h2 class="footer__title">Контакты</h2>
+        <p class="footer__desc">Вы можете связаться со мной одним из этих методов</p>
+        <a href="mailto:ldahtessl@gmail.com" class="footer__link mail">ldahtessl@gmail.com</a>
+        <a href="tel:89779930357" class="footer__link phone">8-977-993-03-57</a>
+        <a href="https://clck.ru/Gm2tU" target="_blank" class="footer__link address">МО, г. Звенигород, ул. Маяковского, д. 5</a>
+      </div>
+      <form  class="footer__form form" id="callback">
+        <h2 class="footer__title">Обратная связь</h2>
+        <p class="footer__desc">Обязательно напишите мне!</p>
+        <input type="email" class="form__input" required placeholder="Ваш E-mail*">
+        <textarea class="form__textarea" required placeholder="Ваше сообщение*"></textarea>
+        <input type="submit" class="form__btn" value="Отправить">
+      </form>
+    </div>
+  </footer>
+  <script src="https://kit.fontawesome.com/583c26b98d.js"></script>
+</body>
+</html>
