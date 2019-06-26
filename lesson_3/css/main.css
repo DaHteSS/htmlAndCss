@@ -5,6 +5,7 @@ body {
   padding: 0;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
+  min-width: 320px;
 }
 
 .flex {
@@ -12,7 +13,7 @@ body {
 }
 
 .container {
-  width: 1280px;
+  width: 1190px;
   margin: 0 auto;
 }
 
@@ -357,7 +358,7 @@ flex-wrap: wrap;
 
 .skill__line {
   background: #008e6a;
-  width: 90%;
+  width: 100%;
   height: 15px;
   border-radius: 10px;
   margin: 0 0 15px 0;
@@ -641,4 +642,295 @@ flex-wrap: wrap;
 
 .form__input:focus, .form__textarea:focus, .form__btn:focus {
   outline: none;
+}
+
+/* media */
+
+@media (min-width: 920px) and (max-width: 1230px) {
+  .container {
+    width: 900px;
+  }
+
+  .myself {
+    width: 40%;
+  }
+
+  .myself__photo {
+    width: 250px;
+    height: 250px;
+  }
+
+  .footer__link {
+    width: 45%;
+  }
+}
+
+@media (min-width: 710px) and (max-width: 920px) {
+  .container {
+    width: 700px;
+  }
+
+  .header {
+    background: rgba(22, 22, 22, 0.9);
+  }
+
+  .myself {
+    width: 40%;
+  }
+
+  .myself__photo {
+    width: 250px;
+    height: 250px;
+  }
+
+  .portfolio {
+    padding: 80px 0 150px;
+  }
+
+  .slider__content {
+    margin: 0 0 50px;
+  }
+
+  .skill__title {
+    font-size: 25px;
+  }
+
+  .skill__desc {
+    font-size: 13px;
+  }
+
+  .experience__topic {
+    font-size: 20px;
+  }
+
+  .experience__desc {
+    font-size: 15px;
+  }
+
+  .footer__title {
+    font-size: 37px;
+  }
+
+  .footer__link {
+    width: 60%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 710px) {
+  .container {
+    width: 560px;
+  }
+
+  .header {
+    padding: 100px 0 130px;
+    background: rgba(22, 22, 22, 0.9);
+  }
+
+  .header__flex {
+    flex-wrap: wrap;
+  }
+
+  .about {
+    width: 100%;
+    order: 2;
+  }
+
+  .about__link {
+    margin: 40px auto 0;
+  }
+
+  .myself {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .myself__photo {
+    width: 250px;
+    height: 250px;
+  }
+
+  .portfolio {
+    padding: 10px 0 80px;
+  }
+
+  .slider__content {
+    margin: 0 0 50px;
+  }
+
+  .skills {
+    padding: 20px 0 150px;
+  }
+
+  .skill {
+    width: 45%;
+  }
+
+  .skill__title {
+    font-size: 25px;
+  }
+
+  .skill__desc {
+    font-size: 13px;
+  }
+
+  .experience {
+    padding: 10px 0 150px;
+  }
+
+  .experience__topic {
+    font-size: 18px;
+  }
+
+  .experience__desc {
+    font-size: 12px;
+  }
+
+  .experience__subject {
+    font-size: 15px;
+  }
+
+  .experience__time {
+    font-size: 11px;
+  }
+
+  .footer {
+    padding: 20px 0;
+  }
+
+  .footer__title {
+    font-size: 30px;
+  }
+
+  .footer__link {
+    width: 75%;
+  }
+
+  .form__input {
+    width: 100%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 576px) {
+  .container {
+    width: 300px;
+  }
+
+  .header {
+    background: rgba(22, 22, 22, 0.9);
+    padding: 100px 0 140px;
+  }
+
+  .header__flex {
+    flex-wrap: wrap;
+  }
+
+  .about {
+    width: 100%;
+    order: 2;
+  }
+
+  .about__link {
+    margin: 30px auto 0 auto;
+  }
+
+  .myself {
+    width: 100%;
+    order: 1;
+    margin-bottom: 50px;
+  }
+
+  .myself__photo {
+    width: 250px;
+    height: 250px;
+  }
+
+  .portfolio {
+    padding: 0px 0 80px;
+  }
+
+  .skills {
+    padding: 0px 0 120px;
+  }
+
+  .skills__subject {
+    margin: 0 0 40px 0;
+  }
+
+  .skill {
+    width: 100%;
+    margin: 0 0 30px 0;
+  }
+
+  .skill:nth-child(6), .skill:nth-child(7), .skill:nth-child(8) {
+    margin: 0 0 30px 0;
+  }
+
+  .slider__content {
+    margin: 0 0 50px;
+  }
+
+  .skill__title {
+    font-size: 25px;
+  }
+
+  .skill__desc {
+    font-size: 13px;
+  }
+
+  .experience {
+    padding: 0px 0 140px;
+  }
+
+  .experience__flex {
+    flex-wrap: wrap;
+  }
+
+  .experience__education {
+    margin-bottom: 50px;
+  }
+
+  .experience__education, .experience__work {
+    width: 100%;
+  }
+
+  .experience__topic {
+    font-size: 20px;
+  }
+
+  .experience__desc {
+    font-size: 15px;
+  }
+
+  .footer {
+    padding: 0 0 50px;
+  }
+
+  .footer__flex {
+    flex-wrap: wrap;
+  }
+
+  .footer__contacts {
+    order: 2;
+  }
+
+  .footer__form  {
+    margin-bottom: 50px;
+  }
+
+  .footer__contacts, .footer__form {
+    width: 100%;
+  }
+
+  .footer__link {
+    width: 70%;
+    margin: 0 auto 15px auto;
+  }
+
+  .footer__link:last-child {
+    margin: 0 auto;
+  }
+
+  .form__input {
+    width: 100%;
+  }
 }
