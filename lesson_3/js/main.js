@@ -1,7 +1,8 @@
 $(document).ready(function() {
-  let form = $('.form');
+  // отправка сообщений с сайта
+  let form = $(".form");
 
-  form.on('submit', (e) => {
+  form.on("submit", e => {
     $.ajax({
       type: "POST",
       url: "mail.php",
@@ -18,5 +19,15 @@ $(document).ready(function() {
       }
     });
     e.preventDefault();
-  })
+  });
+
+  // смена кнопки в блоке portfolio
+  let btn = $(".portfolio__link");
+
+  btn.on("click", function(e) {
+    btn.removeClass("portfolio__link_active");
+    $(this).addClass("portfolio__link_active");
+
+    e.preventDefault();
+  });
 });
