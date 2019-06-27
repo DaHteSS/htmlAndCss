@@ -9,6 +9,7 @@ $(document).ready(function() {
       data: $(`#callback`).serialize(),
       success: function() {
         Swal.fire("Отлично!", "Письмо успешно отправлено!", "success");
+        $(".form")[0].reset();
       },
       error: function() {
         Swal.fire({
