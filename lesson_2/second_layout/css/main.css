@@ -173,22 +173,46 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .media {
+  display: flex;
   text-align: right;
   line-height: 82px;
+  justify-content: center;
 }
 
 .header__media {
-  color: #fff;
   font-size: 18px;
   padding: 0 10px;
-  transition: all 0.3s ease-out;
+  text-decoration: none;
 }
 
-.header__media:hover {
+.header__media::after {
+  display: block;
+  transition: all 0.3s ease-out;
+  color: #fff;
+  font-family:"Font Awesome 5 Brands";
+}
+
+.facebook:after {
+  content: '\f39e';
+}
+
+.twitter:after {
+  content: '\f099';
+}
+
+.linkedin:after {
+  content: '\f0e1';
+}
+
+.skype:after {
+  content: '\f17e';
+}
+
+.header__media:hover::after {
   color: #11749e;
 }
 
-.header__link:active, .header__media:active  {
+.header__link:active, .header__media:active:after  {
   color: #0e4e69;
 }
 
@@ -217,25 +241,33 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header__btn {
-  color: #fff;
-  box-sizing: border-box;
   font-size: 26px;
+  text-decoration: none;
+  margin: 0 auto 100px;
+  position: relative;
+}
+
+.header__btn:after {
+  display: block;
+  content: '\f078';
+  color: #fff;
+  font-family:"Font Awesome 5 Free";
+  font-weight:900;
+  box-sizing: border-box;
   border: 2px solid #fff;
   border-radius: 50%;
   width: 65px;
   height: 65px;
   line-height: 65px;
-  text-decoration: none;
-  margin: 0 auto 100px;
   transition: color 0.3s ease-in;
 }
 
-.header__btn:hover {
+.header__btn:hover:after {
   color: #11749e;
   border-color: #11749e;
 }
 
-.header__btn:active {
+.header__btn:active:after {
   color: #0e4e69;
   border-color: #0e4e69;
 }
@@ -243,6 +275,15 @@ h1, h2, h3, h4, h5, h6 {
 .header__copyright {
   color: inherit;
   text-decoration: none;
+  transition: color 0.2s ease-in;
+}
+
+.header__copyright:hover {
+  color: #fff;
+}
+
+.header__copyright:active {
+  color: #acacac;
 }
 
 /* features */
@@ -465,7 +506,10 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
 }
 
-.desc__icon {
+.desc__block:before {
+  font-family:"Font Awesome 5 Free";
+  font-weight:400;
+  content: '\f044';
   font-size: 55px;
 }
 
@@ -712,8 +756,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer__link {
   color: inherit;
+  transition: color 0.2s ease-in;
 }
 
+.footer__link:hover {
+  color: #d0d0d0;
+}
+
+.footer__link:active {
+  color: #8a8a8a;
+}
 /* media */
 
 @media (min-width: 920px) and (max-width: 1200px) {
