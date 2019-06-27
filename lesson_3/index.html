@@ -26,7 +26,7 @@
         <a href="#callback" class="about__link">Написать</a>
       </article>
       <figure class="myself">
-        <img src="img/myself__photo.jpg" alt="Это моя фотография" class="myself__photo" width="300" height="300">
+        <img src="img/myself__photo.jpg" alt="Это моя фотография" class="myself__photo" width="340" height="340">
         <figcaption class="myself__info flex">
           <h1 class="myself__topic">Даниил Шемелин</h1>
           <span class="myself__position">Front-End Developer</span>
@@ -175,15 +175,18 @@
         <a href="tel:89779930357" class="footer__link phone">8-977-993-03-57</a>
         <a href="https://clck.ru/Gm2tU" target="_blank" class="footer__link address">МО, г. Звенигород, ул. Маяковского, д. 5</a>
       </div>
-      <form  class="footer__form form" id="callback">
+      <form method="POST" class="footer__form form" id="callback">
         <h2 class="footer__title">Обратная связь</h2>
         <p class="footer__desc">Обязательно напишите мне!</p>
-        <input type="email" class="form__input" required placeholder="Ваш E-mail*">
-        <textarea class="form__textarea" required placeholder="Ваше сообщение*"></textarea>
+        <input type="email" name="email" class="form__input" required placeholder="Ваш E-mail*">
+        <textarea class="form__textarea" name="message" required placeholder="Ваше сообщение*"></textarea>
         <input type="submit" class="form__btn" value="Отправить">
       </form>
     </div>
   </footer>
   <script src="https://kit.fontawesome.com/583c26b98d.js"></script>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
