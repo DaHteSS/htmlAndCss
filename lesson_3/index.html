@@ -22,7 +22,7 @@
         это время я успел раз 10 бросить и снова начать писать код, потому что просто не могу без этого. В последний год я стал больше создавать. Появились 
         свои проекты.</p>
         <p class="about__text">Успел поработать <span class="about__desc">html-верстальщиком</span> / <span class="about__desc">Fronte-end разработчиком</span> 
-        в достаточно крупной компании и <span class="about__desc">каждый день</span> я изучая что-то новое и совершенствую свои навыки в том, что уже <span class="about__desc">умею</span>.</p>
+        в достаточно крупной компании и <span class="about__desc">каждый день</span> я изучаю что-то новое и совершенствую свои навыки в том, что уже <span class="about__desc">умею</span>.</p>
         <a href="#callback" class="about__link">Написать</a>
       </article>
       <figure class="myself">
@@ -62,7 +62,7 @@
           </li>
         </ul>
         <div class="portfolio__slider flex">
-          <!-- К сожалению, ещё не умею добавлять анимацию через JS, поэтому при наведении блок появляется резко :с ) -->
+          <!-- К сожалению, ещё не умею добавлять анимацию через JS, поэтому при наведении блок появляется резко :с Можно, конечно, использовать плагины, но хочется самостоятельно сделать -->
           <div class="slider__content">
             <img src="img/slider__img_1.jpg" alt="Img" width="256" height="256" class="portfolio__img">
             <div class="slider__desc">
@@ -94,32 +94,32 @@
         <div class="skill">
           <div class="skill__line html"></div>
           <span class="skill__title">html5</span>
-          <p class="skill__desc">Включая семантику</p>
+          <span class="skill__desc">Включая семантику</span>
         </div>
         <div class="skill">
           <div class="skill__line css"></div>
           <span class="skill__title">css3</span>
-          <p class="skill__desc">Умею делать красиво</p>
+          <span class="skill__desc">Умею делать красиво</span>
         </div>
         <div class="skill">
           <div class="skill__line js"></div>
           <span class="skill__title">js</span>
-          <p class="skill__desc">Только начинаю</p>
+          <span class="skill__desc">Только начинаю</span>
         </div>
         <div class="skill">
           <div class="skill__line bootstrap"></div>
           <span class="skill__title">Bootstrap4</span>
-          <p class="skill__desc">Только сетка, только хардкор</p>
+          <span class="skill__desc">Только сетка, только хардкор</span>
         </div>
         <div class="skill">
           <div class="skill__line webpack"></div>
           <span class="skill__title">webpack</span>
-          <p class="skill__desc">Проект сам себя не соберёт...</p>
+          <span class="skill__desc">Проект сам себя не соберёт...</span>
         </div>
         <div class="skill">
           <div class="skill__line preprocessor"></div>
           <span class="skill__title">preprocessors</span>
-          <p class="skill__desc">Такие как PUG, LESS, SCSS</p>
+          <span class="skill__desc">Такие как PUG, LESS, SCSS</span>
         </div>
       </div>
     </section>
@@ -175,15 +175,18 @@
         <a href="tel:89779930357" class="footer__link phone">8-977-993-03-57</a>
         <a href="https://clck.ru/Gm2tU" target="_blank" class="footer__link address">МО, г. Звенигород, ул. Маяковского, д. 5</a>
       </div>
-      <form  class="footer__form form" id="callback">
+      <form method="POST" class="footer__form form" id="callback">
         <h2 class="footer__title">Обратная связь</h2>
         <p class="footer__desc">Обязательно напишите мне!</p>
-        <input type="email" class="form__input" required placeholder="Ваш E-mail*">
-        <textarea class="form__textarea" required placeholder="Ваше сообщение*"></textarea>
+        <input type="email" name="email" class="form__input" required placeholder="Ваш E-mail*">
+        <textarea class="form__textarea" name="message" required placeholder="Ваше сообщение*"></textarea>
         <input type="submit" class="form__btn" value="Отправить">
       </form>
     </div>
   </footer>
   <script src="https://kit.fontawesome.com/583c26b98d.js"></script>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

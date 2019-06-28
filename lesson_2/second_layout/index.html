@@ -24,45 +24,44 @@
         </ul>
       </nav>
       <div class="media">
-        <a href="#" class="header__media facebook"><i class="fab fa-facebook-f"></i></a>
-        <a href="#" class="header__media twitter"><i class="fab fa-twitter"></i></a>
-        <a href="#" class="header__media linkedin"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#" class="header__media skype"><i class="fab fa-skype"></i></a>
+        <a href="#" class="header__media facebook"></a>
+        <a href="#" class="header__media twitter"></a>
+        <a href="#" class="header__media linkedin"></a>
+        <a href="#" class="header__media skype"></a>
       </div>
     </div>
     <div class="container header__flex_bottom flex">
       <h1 class="header__title">Creatives</h1>
       <span class="header__text">Power by <a href="https://dahtess.ru" class="header__copyright">dahtess.ru</a></span>
       <span class="header__scroll">Scroll Down</span>
-      <a href="#" class="header__btn"><i class="fas fa-chevron-down"></i></a>
+      <a href="#main" class="header__btn"></a>
     </div>
   </header>
-  <main class="main">
+  <main class="main" id="main">
     <section class="features">
       <div class="container">
         <h2 class="features__title">We Are An Awesome Agency</h2>
-        <ul class="features__list">
-          <li class="features__item">
+        <div class="features__list">
+          <div class="features__item">
             <h3 class="features__topic">Feature one</h3>
             <p class="features__text">Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus</p>
-          </li>
-          <li class="features__item">
+          </div>
+          <div class="features__item">
             <h3 class="features__topic">Feature two</h3>
             <p class="features__text">Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus</p>
-          </li>
-          <li class="features__item">
+          </div>
+          <div class="features__item">
             <h3 class="features__topic">Feature three</h3>
             <p class="features__text">Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus</p>
-          </li>
-          <li class="features__item">
+          </div>
+          <div class="features__item">
             <h3 class="features__topic">Feature four</h3>
             <p class="features__text">Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus</p>
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
     </section>
     <section class="article">
-      <!-- сделать для него bgi с картинкой -->
       <div class="row">
         <div class="container flex article__flex">
           <div class="news news_top">
@@ -88,33 +87,32 @@
     </section>
     <section class="blog">
         <div class="container">
-          <!-- <div class="blog__letter letter">b</div> -->
           <h2 class="blog__title">Let's blog</h2>
           <p class="blog__subject">We love clean design and advanced digital solutions.</p>
           <div class="blog__list">
             <figure class="blog__post">
-              <img src="img/blog__post_1.jpg" width="270" height="270" alt="Blog Post 1">
+              <img src="img/blog__post_1.jpg" class="blog__img" width="270" height="270" alt="Blog Post 1">
               <figcaption class="blog__desc">
                 <h3 class="blog__topic">Fresh Summer Campaign</h3>
                 <p class="blog__text">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue</p>
               </figcaption>
             </figure>
             <figure class="blog__post">
-              <img src="img/blog__post_2.jpg" width="270" height="270" alt="Blog Post 2">
+              <img src="img/blog__post_2.jpg" class="blog__img" width="270" height="270" alt="Blog Post 2">
               <figcaption class="blog__desc">
                 <h3 class="blog__topic">Fresh Summer Campaign</h3>
                 <p class="blog__text">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue</p>
               </figcaption>
             </figure>
             <figure class="blog__post">
-              <img src="img/blog__post_3.jpg" width="270" height="270" alt="Blog Post 3">
+              <img src="img/blog__post_3.jpg" class="blog__img" width="270" height="270" alt="Blog Post 3">
               <figcaption class="blog__desc">
                 <h3 class="blog__topic">Fresh Summer Campaign</h3>
                 <p class="blog__text">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue</p>
               </figcaption>
             </figure>
             <figure class="blog__post">
-              <img src="img/blog__post_1.jpg" width="270" height="270" alt="Blog Post 4">
+              <img src="img/blog__post_1.jpg" class="blog__img" width="270" height="270" alt="Blog Post 4">
               <figcaption class="blog__desc">
                 <h3 class="blog__topic">Fresh Summer Campaign</h3>
                 <p class="blog__text">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue</p>
@@ -125,12 +123,7 @@
     </section>
     <div class="desc">
       <div class="container desc__flex flex">
-        <div class="desc__block">
-          <i class="far fa-edit desc__icon"></i>
           <p class="desc__text">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-        </div>
-        <div class="desc__block">
-          <i class="far fa-edit desc__icon"></i>
           <p class="desc__text">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
         </div>
       </div>
@@ -149,7 +142,6 @@
     </section>
     <section class="team">
       <div class="container flex team__flex">
-        <!-- <div class="team_letter letter">t</div> -->
         <h2 class="team__title">Our Team</h2>
         <p class="team__subject">sales long tail influencer pitch release niche market.</p>
         <figure class="team__item">
