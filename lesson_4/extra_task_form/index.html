@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Форма</title>
+</head>
+<body>
+  <div class="container">
+    <form method="POST" class="form">
+      <div class="form__bg">
+        <div class="form__content_left">
+          <span class="form__title">Тип</span>
+        </div>
+        <div class="form__content form__content_right">
+          <label class="form__label radio__label" for="radio1">
+            <input type="radio" class="form__radio" id="radio1" name="top_radio" checked>Аксессуар для интерьера
+          </label>
+          <label class="form__label radio__label" for="radio2">
+            <input type="radio" class="form__radio" id="radio2" name="top_radio">Детская игрушка
+          </label>
+        </div>
+      </div>
+      <div class="form__bg">
+        <div class="form__content_left">
+          <span class="form__title">Цвет</span>
+        </div>
+        <div class="form__content form__content_right">
+          <label class="form__label checkbox__label" for="checkbox1">
+            <input type="checkbox" id="checkbox1" class="form__checkbox" name="white" checked>Белый
+          </label>
+          <label class="form__label checkbox__label" for="checkbox2">
+            <input type="checkbox" id="checkbox2" class="form__checkbox" name="gray">Серый
+          </label>
+          <label class="form__label checkbox__label" for="checkbox3">
+            <input type="checkbox" id="checkbox3" class="form__checkbox" name="tiffany">&laquo;Тиффани&raquo;
+          </label>
+          <label class="form__label checkbox__label" for="checkbox4">
+            <input type="checkbox" id="checkbox4" class="form__checkbox" name="black">Чёрный
+          </label>
+          <label class="form__label checkbox__label" for="checkbox5">
+            <input type="checkbox" id="checkbox5" class="form__checkbox" name="pink">Розовый
+          </label>
+          <label class="form__label checkbox__label" for="checkbox6">
+            <input type="checkbox" id="checkbox6" class="form__checkbox" name="orange">Оранжевый
+          </label>
+        </div>
+      </div>
+      <div class="form__bg">
+        <div class="form__content_left">
+          <span class="form__title">фио</span>
+        </div>
+        <div class="form__content form__content_right">
+          <label class="form__label input__label" for="surname">
+            Фамилия:
+            <input type="text" class="form__input" id="surname" placeholder="Укажите фамилию" required>
+          </label>
+          <label class="form__label input__label" for="name">
+            Имя:
+            <input type="text" class="form__input" id="name" placeholder="Введите Ваше имя" required>
+          </label>
+          <label class="form__label input__label" for="middlename">
+            Отчество:
+            <input type="text" class="form__input" id="middlename" placeholder="Отчество, если желаете">
+          </label>
+        </div>
+      </div>
+      <div class="form__bg form__bg_footer">
+        <div class="form__content_left">
+          <span class="form__title form__title__footer">тел</span>
+          <span class="form__title form__title__footer">e-mail</span>
+        </div>
+          <div class="form__content form__content_right">
+            <label class="input__label_footer" for="phone"><input type="text" class="form__input form__input_footer" id="phone" placeholder="+7 XXX XX XX" required></label>
+            <label class="input__label_footer" for="mail"><input type="text" class="form__input form__input_footer" id="mail" placeholder="Мы не будем спамить, честно!" required></label>
+          </div>
+      </div>
+    </form>
+  </div>
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/583c26b98d.js"></script>
+</body>
+</html>

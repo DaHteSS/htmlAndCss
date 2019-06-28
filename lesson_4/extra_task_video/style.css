@@ -1,0 +1,30 @@
+* {
+	margin: 0;
+	padding: 0;
+
+}
+
+html, body {
+	height: 100vh;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+video {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -999;
+	opacity: 0.9;
+}
+
+h1 {
+	color: white;
+	font-size: 70px;
+	font-family: arial;
+}
