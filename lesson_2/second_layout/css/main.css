@@ -295,11 +295,16 @@ h1, h2, h3, h4, h5, h6 {
   padding: 170px 0 125px;
 }
 
+.features__flex {
+  flex-wrap: wrap;
+}
+
 .features__title {
   position: relative;
   font-size: 38px;
   margin: 0 0 140px;
   text-transform: uppercase;
+  width: 100%;
 }
 
 .features__title:before {
@@ -311,14 +316,8 @@ h1, h2, h3, h4, h5, h6 {
   left: 37%;
 }
 
-.features__list {
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-
 .features__item {
-  list-style-type: none;
+  width: 25%;
 }
 
 .features__item:before {
@@ -333,11 +332,6 @@ h1, h2, h3, h4, h5, h6 {
   box-sizing: border-box;
 }
 
-.features__item:nth-child(1):before {
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 400;
-  content: '\f044';
-}
 .features__item:nth-child(2):before {
   font-family: 'Font Awesome 5 Free';
   font-weight: 400;
@@ -345,10 +339,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 .features__item:nth-child(3):before {
   font-family: 'Font Awesome 5 Free';
+  font-weight: 400;
+  content: '\f044';
+}
+.features__item:nth-child(4):before {
+  font-family: 'Font Awesome 5 Free';
   font-weight: 900;
   content: '\f002';
 }
-.features__item:nth-child(4):before {
+.features__item:nth-child(5):before {
   font-family: 'Font Awesome 5 Free';
   font-weight: 400;
   content: '\f075';
@@ -861,7 +860,6 @@ h1, h2, h3, h4, h5, h6 {
 
   .features__item {
     margin-bottom: 0;
-    width: auto;
   }
 
   .features__item:nth-child(3), .features__item:nth-child(4) {
@@ -1488,6 +1486,7 @@ h1, h2, h3, h4, h5, h6 {
 
   .features__item {
     margin-bottom: 30px;
+    width: 100%;
   }
 
   .features__item:last-child {
