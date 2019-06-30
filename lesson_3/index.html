@@ -12,7 +12,7 @@
 <body>
   <header class="header">
     <!-- Пока что не планирую добавлять слайдер на данную страницу -->
-    <!-- <div class="slider">
+    <!-- <div class="slider header__slider">
       <div class="slide"></div>
     </div> -->
     <div class="container flex header__flex">
@@ -30,9 +30,9 @@
         <figcaption class="myself__info flex">
           <h1 class="myself__topic">Даниил Шемелин</h1>
           <span class="myself__position">Front-End Developer</span>
-          <a href="https://vk.com/ldahtessl" target="_blank" class="myself__link vk"></a>
-          <a href="https://www.instagram.com/valkalajka/" target="_blank" class="myself__link instagram"></a>
-          <a href="https://github.com/DaHteSS" target="_blank" class="myself__link github"></a>
+          <a href="https://vk.com/ldahtessl" target="_blank" class="myself__link myself__vk"></a>
+          <a href="https://www.instagram.com/valkalajka/" target="_blank" class="myself__link myself__instagram"></a>
+          <a href="https://github.com/DaHteSS" target="_blank" class="myself__link myself__github"></a>
         </figcaption>
       </figure>
       <!-- <div class="slider__nav">
@@ -61,8 +61,7 @@
             <a href="#" class="portfolio__link">В процессе</a>
           </li>
         </ul>
-        <div class="portfolio__slider flex">
-          <!-- К сожалению, ещё не умею добавлять анимацию через JS, поэтому при наведении блок появляется резко :с Можно, конечно, использовать плагины, но хочется самостоятельно сделать -->
+        <div class="portfolio__slider slider flex">
           <div class="slider__content">
             <img src="img/slider__img_1.jpg" alt="Img" width="256" height="256" class="portfolio__img">
             <div class="slider__desc">
@@ -89,35 +88,35 @@
     </section>
     <section class="skills">
       <div class="container flex skills__flex">
-        <h2 class="skills_title">My skills</h2>
+        <h2 class="skills__title">My skills</h2>
         <p class="skills__subject">Я знаю данные технологии, потому что обучаюсь каждый день!</p>
         <div class="skill">
-          <div class="skill__line html"></div>
+          <div class="skill__line skill__html"></div>
           <span class="skill__title">html5</span>
           <span class="skill__desc">Включая семантику</span>
         </div>
         <div class="skill">
-          <div class="skill__line css"></div>
+          <div class="skill__line skill__css"></div>
           <span class="skill__title">css3</span>
           <span class="skill__desc">Умею делать красиво</span>
         </div>
         <div class="skill">
-          <div class="skill__line js"></div>
+          <div class="skill__line skill__js"></div>
           <span class="skill__title">js</span>
           <span class="skill__desc">Только начинаю</span>
         </div>
         <div class="skill">
-          <div class="skill__line bootstrap"></div>
+          <div class="skill__line skill__bootstrap"></div>
           <span class="skill__title">Bootstrap4</span>
           <span class="skill__desc">Только сетка, только хардкор</span>
         </div>
         <div class="skill">
-          <div class="skill__line webpack"></div>
+          <div class="skill__line skill__webpack"></div>
           <span class="skill__title">webpack</span>
           <span class="skill__desc">Проект сам себя не соберёт...</span>
         </div>
         <div class="skill">
-          <div class="skill__line preprocessor"></div>
+          <div class="skill__line skill__preprocessor"></div>
           <span class="skill__title">preprocessors</span>
           <span class="skill__desc">Такие как PUG, LESS, SCSS</span>
         </div>
@@ -125,7 +124,7 @@
     </section>
     <div class="experience">
       <div class="container flex experience__flex">
-        <section class="experience__education education">
+        <section class="experience__education">
           <h2 class="experience__title">Образование</h2>
           <p class="experience__subject">Мои университеты и специальности</p>
           <div class="experience__block experience__block_left">
@@ -144,7 +143,7 @@
               <span class="experience__time">Сентябрь, 2017 - Апрель, 2022</span>
           </div>
         </section>
-        <section class="experience__work work">
+        <section class="experience__work">
           <h2 class="experience__title">Опыт работы</h2>
           <p class="experience__subject">Да-да, я тут работал</p>
           <div class="experience__block experience__block_right">
@@ -171,9 +170,9 @@
       <div class="footer__contacts">
         <h2 class="footer__title">Контакты</h2>
         <p class="footer__desc">Вы можете связаться со мной одним из этих методов</p>
-        <a href="mailto:ldahtessl@gmail.com" class="footer__link mail">ldahtessl@gmail.com</a>
-        <a href="tel:89779930357" class="footer__link phone">8-977-993-03-57</a>
-        <a href="https://clck.ru/Gm2tU" target="_blank" class="footer__link address">МО, г. Звенигород, ул. Маяковского, д. 5</a>
+        <a href="mailto:ldahtessl@gmail.com" class="footer__link footer__mail">ldahtessl@gmail.com</a>
+        <a href="tel:89779930357" class="footer__link footer__phone">8-977-993-03-57</a>
+        <a href="https://clck.ru/Gm2tU" target="_blank" class="footer__link footer__address">МО, г. Звенигород, ул. Маяковского, д. 5</a>
       </div>
       <form method="POST" class="footer__form form" id="callback">
         <h2 class="footer__title">Обратная связь</h2>
