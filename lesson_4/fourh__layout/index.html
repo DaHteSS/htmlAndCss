@@ -58,9 +58,9 @@
           <a href="#" class="header__btn">Get Started</a>
         </div>
         <div class="header__slider-content">
-          <span class="header__title header__title_small">Unique and Modern Design</span>
-          <h1 class="header__title header__title_big">Portfolio PSD Template</h1>
-          <p class="header__text">It's a new PSD template for you w/ love :3</p>
+          <span class="header__title header__title_small">Title small test</span>
+          <h1 class="header__title header__title_big">Title big test</h1>
+          <p class="header__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dolorem dignissimos quis ex nulla minus aut doloribus voluptatum.</p>
         </div>
       </div>
     </div>
@@ -110,23 +110,27 @@
         <p class="projects__text">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
         <ul class="projects__list">
           <li class="projects__item">
-            <a href="#" class="projects__link projects__link_active">All</a>
+            <a href="#" class="projects__btn projects__btn_active">All</a>
           </li>
           <li class="projects__item">
-            <a href="#" class="projects__link">Web Design</a>
+            <a href="#" class="projects__btn">Web Design</a>
           </li>
           <li class="projects__item">
-            <a href="#" class="projects__link">Mobile App</a>
+            <a href="#" class="projects__btn">Mobile App</a>
           </li>
           <li class="projects__item">
-            <a href="#" class="projects__link">Illustration</a>
+            <a href="#" class="projects__btn">Illustration</a>
           </li>
           <li class="projects__item">
-            <a href="#" class="projects__link">Photography</a>
+            <a href="#" class="projects__btn">Photography</a>
           </li>
         </ul>
         <figure class="projects__content">
           <img src="img/project_1.jpg" width="369" height="237" alt="Project 1" class="projects__img">
+          <div class="projects__block_hidden">
+            <a href="#" class="projects__link"></a>
+            <a href="#" class="projects__link"></a>
+          </div>
           <figcaption class="projects__desc">
             <h3 class="projects__topic">Claritas Etiam Processus</h3>
             <span class="projects__subject">Photography, Nature</span>
@@ -134,6 +138,10 @@
         </figure>
         <figure class="projects__content">
           <img src="img/project_2.jpg" width="369" height="237" alt="Project 2" class="projects__img">
+          <div class="projects__block_hidden">
+            <a href="#" class="projects__link"></a>
+            <a href="#" class="projects__link"></a>
+          </div>
           <figcaption class="projects__desc">
             <h3 class="projects__topic">Quam Nutamus Farum</h3>
             <span class="projects__subject">Graphic Design, Mock-Up</span>
@@ -141,6 +149,10 @@
         </figure>
         <figure class="projects__content">
           <img src="img/project_3.jpg" width="369" height="237" alt="Project 3" class="projects__img">
+          <div class="projects__block_hidden">
+            <a href="#" class="projects__link"></a>
+            <a href="#" class="projects__link"></a>
+          </div>
           <figcaption class="projects__desc">
             <h3 class="projects__topic">Usus Legentis Videntur</h3>
             <span class="projects__subject">Photography, Holiday</span>
@@ -148,6 +160,10 @@
         </figure>
         <figure class="projects__content">
           <img src="img/project_4.jpg" width="369" height="237" alt="Project 4" class="projects__img">
+          <div class="projects__block_hidden">
+            <a href="#" class="projects__link"></a>
+            <a href="#" class="projects__link"></a>
+          </div>
           <figcaption class="projects__desc">
             <h3 class="projects__topic">Claritas Etiam Processus</h3>
             <span class="projects__subject">Photography, Nature</span>
@@ -155,6 +171,10 @@
         </figure>
         <figure class="projects__content">
           <img src="img/project_5.jpg" width="369" height="237" alt="Project 5" class="projects__img">
+          <div class="projects__block_hidden">
+            <a href="#" class="projects__link"></a>
+            <a href="#" class="projects__link"></a>
+          </div>
           <figcaption class="projects__desc">
             <h3 class="projects__topic">Quam Nutamus Farum</h3>
             <span class="projects__subject">Graphic Design, Mock-Up</span>
@@ -162,25 +182,31 @@
         </figure>
         <figure class="projects__content">
           <img src="img/project_6.jpg" width="369" height="237" alt="Project 6" class="projects__img">
+          <div class="projects__block_hidden">
+            <a href="#" class="projects__link"></a>
+            <a href="#" class="projects__link"></a>
+          </div>
           <figcaption class="projects__desc">
             <h3 class="projects__topic">Usus Legentis Videntur</h3>
             <span class="projects__subject">Photography, Holiday</span>
           </figcaption>
         </figure>
-        <a href="#" class="projects__btn">Load More</a>
+        <a href="#" class="projects__btn_btm">Load More</a>
       </div>
     </section>
     <section class="video">
       <div class="container">
+        <!-- Добавил дополнительный div для того, чтобы сделать hover эффект, другого выхода я не вижу -->
+        <div class="video__icon"></div>
         <h2 class="video__title">Waxom Video Presentation</h2>
         <p class="video__text">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius, qui sequitur mutationem consuetudium.</p>
         <span class="video__time">03:26</span>
       </div>
     </section>
     <section class="mobile">
-      <div class="container">
+      <div class="container mobile__flex flex">
         <div class="mobile__left">
-          <img src="img/mobile.png" alt="Mobile App" class="mobile__img">
+          <img src="img/mobile.png" width="420" height="616" alt="Mobile App" class="mobile__img">
         </div>
         <div class="mobile__right">
           <h2 class="mobile__title">Excellent for Mobile Devices.</h2>
@@ -225,32 +251,74 @@
         <div class="posts__slider">
           <article class="posts__content">
             <figure class="posts__block">
-              <div class="posts__img-slider">
-                <img src="img/post_1.jpg" alt="Post 1" class="posts__img">
-              </div>
-              <h3 class="posts__topic">Lorem ipsum dolor sit amet</h3>
-              <p class="posts__text">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
-              <a href="#" class="posts__link">Read More</a>
+              <div class="posts__time"></div>
+              <img src="img/post_1.jpg" width="369" height="220" alt="Post 1" class="posts__img">
+              <div class="posts__block_hidden"></div>
+              <figcaption class="posts__desc">
+                <h3 class="posts__topic">Lorem ipsum dolor sit amet</h3>
+                <p class="posts__subject">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+                <a href="#" class="posts__link">Read More</a>
+              </figcaption>
             </figure>
           </article>
           <article class="posts__content">
             <figure class="posts__block">
-              <div class="posts__img-slider">
-                <img src="img/post_2.jpg" alt="Post 2" class="posts__img">
-              </div>
-              <h3 class="posts__topic">Lorem ipsum dolor sit amet</h3>
-              <p class="posts__text">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
-              <a href="#" class="posts__link">Read More</a>
+              <div class="posts__time"></div>
+              <img src="img/post_2.jpg" width="369" height="220" alt="Post 2" class="posts__img">
+              <div class="posts__block_hidden"></div>
+              <figcaption class="posts__desc">
+                <h3 class="posts__topic">Lorem ipsum dolor sit amet</h3>
+                <p class="posts__subject">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+                <a href="#" class="posts__link">Read More</a>
+              </figcaption>
             </figure>
           </article>
           <article class="posts__content">
             <figure class="posts__block">
-              <div class="posts__img-slider">
-                <img src="img/post_3.jpg" alt="Post 3" class="posts__img">
-              </div>
-              <h3 class="posts__topic">Lorem ipsum dolor sit amet</h3>
-              <p class="posts__text">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
-              <a href="#" class="posts__link">Read More</a>
+              <div class="posts__time"></div>
+              <img src="img/post_3.jpg" width="369" height="220" alt="Post 3" class="posts__img">
+              <div class="posts__block_hidden"></div>
+              <figcaption class="posts__desc">
+                <h3 class="posts__topic">Lorem ipsum dolor sit amet</h3>
+                <p class="posts__subject">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+                <a href="#" class="posts__link">Read More</a>
+              </figcaption>
+            </figure>
+          </article>
+          <article class="posts__content">
+            <figure class="posts__block">
+              <div class="posts__time"></div>
+              <img src="img/post_1.jpg" width="369" height="220" alt="Post 1" class="posts__img">
+              <div class="posts__block_hidden"></div>
+              <figcaption class="posts__desc">
+                <h3 class="posts__topic">Lorem ipsum dolor sit amet</h3>
+                <p class="posts__subject">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+                <a href="#" class="posts__link">Read More</a>
+              </figcaption>
+            </figure>
+          </article>
+          <article class="posts__content">
+            <figure class="posts__block">
+              <div class="posts__time"></div>
+              <img src="img/post_2.jpg" width="369" height="220" alt="Post 2" class="posts__img">
+              <div class="posts__block_hidden"></div>
+              <figcaption class="posts__desc">
+                <h3 class="posts__topic">Lorem ipsum dolor sit amet</h3>
+                <p class="posts__subject">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+                <a href="#" class="posts__link">Read More</a>
+              </figcaption>
+            </figure>
+          </article>
+          <article class="posts__content">
+            <figure class="posts__block">
+              <div class="posts__time"></div>
+              <img src="img/post_3.jpg" width="369" height="220" alt="Post 3" class="posts__img">
+              <div class="posts__block_hidden"></div>
+              <figcaption class="posts__desc">
+                <h3 class="posts__topic">Lorem ipsum dolor sit amet</h3>
+                <p class="posts__subject">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+                <a href="#" class="posts__link">Read More</a>
+              </figcaption>
             </figure>
           </article>
         </div>
@@ -275,10 +343,10 @@
   </main>
   <footer class="footer">
     <div class="footer__top">
-      <div class="container">
+      <div class="container footer__flex flex">
         <div class="footer__left">
           <a href="#" class="footer__logo">Waxom</a>
-          <p class="footer__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci suscipit lobortis claritatem.</p>
+          <p class="footer__text footer__text_left">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci suscipit lobortis claritatem.</p>
           <a href="#" class="footer__link footer__link_left">Read More</a>
         </div>
         <div class="footer__posts">
@@ -318,17 +386,18 @@
           </div>
         </div>
         <div class="footer__dribbble">
+          <h3 class="footer__title">Dribbble Widget</h3>
           <a href="#" class="footer__dribbble-link">
-            <img src="img/dribbble_1.jpg" alt="Dribbble 1" class="footer__img">
+            <img src="img/dribbble_1.jpg" width="130" height="98" alt="Dribbble 1" class="footer__img">
           </a>
           <a href="#" class="footer__dribbble-link">
-            <img src="img/dribbble_2.jpg" alt="Dribbble 2" class="footer__img">
+            <img src="img/dribbble_2.jpg" width="130" height="98" alt="Dribbble 2" class="footer__img">
           </a>
           <a href="#" class="footer__dribbble-link">
-            <img src="img/dribbble_3.jpg" alt="Dribbble 3" class="footer__img">
+            <img src="img/dribbble_3.jpg" width="130" height="98" alt="Dribbble 3" class="footer__img">
           </a>
           <a href="#" class="footer__dribbble-link">
-            <img src="img/dribbble_4.jpg" alt="Dribbble 4" class="footer__img">
+            <img src="img/dribbble_4.jpg" width="130" height="98" alt="Dribbble 4" class="footer__img">
           </a>
         </div>
       </div>
