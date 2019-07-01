@@ -5,14 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="js/slick/slick.css">
+  <link rel="stylesheet" href="js/slick/slick-theme.css">
+  <link rel="stylesheet" href="css/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <title>Waxom</title>
 </head>
 <body>
   <header class="header">
-    <!-- <div class="header__slider"></div> -->
-    <div class="container">
+    <div class="container header__flex flex">
       <a href="#" class="header__logo">Waxom</a>
       <nav class="header__menu">
         <ul class="header__list">
@@ -48,15 +50,24 @@
       </div>
     </div>
     <div class="container">
-      <span class="header__title header__title_small">Unique and Modern Design</span>
-      <h1 class="header__title_big">Portfolio PSD Template</h1>
-      <p class="header__text">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
-      <a href="#" class="header__btn">Get Started</a>
+      <div class="header__slider">
+        <div class="header__slider-content">
+          <span class="header__title header__title_small">Unique and Modern Design</span>
+          <h1 class="header__title header__title_big">Portfolio PSD Template</h1>
+          <p class="header__text">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
+          <a href="#" class="header__btn">Get Started</a>
+        </div>
+        <div class="header__slider-content">
+          <span class="header__title header__title_small">Unique and Modern Design</span>
+          <h1 class="header__title header__title_big">Portfolio PSD Template</h1>
+          <p class="header__text">It's a new PSD template for you w/ love :3</p>
+        </div>
+      </div>
     </div>
   </header>
   <main class="main">
     <div class="doing">
-      <div class="container">
+      <div class="container doing__flex flex">
         <div class="doing__block">
           <h3 class="doing__title">Web & App Design</h2>
           <p class="doing__text">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
@@ -79,12 +90,17 @@
       <div class="container">
         <h2 class="ideas__title">Waxom is Realization of your Ideas.</h2>
         <p class="ideas__text">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+        <div class="ideas__content">
+        	<img src="img/ideas-img-center.jpg" alt="Ideas Img" width="770" height="482" class="ideas__img">
+        </div>
       </div>
     </section>
     <section class="buy">
-      <div class="container">
-        <h2 class="buy__title">Waxom Multipurpose WordPress Theme</h2>
-        <p class="buy__text">Don't Forget to Rate the Template. Thanks so much!</p>
+      <div class="container buy__flex flex">
+        <div class="buy__content">
+          <h2 class="buy__title"><span class="buy__desc">Waxom</span> Multipurpose WordPress Theme</h2>
+          <p class="buy__text">Don't Forget to Rate the Template. Thanks so much!</p>
+        </div>
         <a href="#" class="buy__btn">Purchase Now</a>
       </div>
     </section>
@@ -179,7 +195,7 @@
       </div>
     </section>
     <div class="counters">
-      <div class="container">
+      <div class="container counters__flex flex">
         <div class="counters__content">
           <span class="counters__number">3587</span>
           <span class="counters__desc">Satisfied Clients</span>
@@ -326,5 +342,8 @@
       </div>
     </div>
   </footer>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/slick/slick.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
