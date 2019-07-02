@@ -30,7 +30,6 @@ h6 {
 }
 .header__flex {
   align-items: center;
-  justify-content: space-between;
 }
 .header__logo {
   text-decoration: none;
@@ -52,7 +51,8 @@ h6 {
   color: #a18059;
 }
 .header__menu {
-  width: 70%;
+  margin-left: auto;
+  margin-right: 20px;
 }
 .header__list {
   padding: 0;
