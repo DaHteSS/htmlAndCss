@@ -39,8 +39,10 @@ h6 {
   font-family: 'Raleway', serif;
   font-weight: 500;
   font-size: 34px;
+  transition: all 0.2s ease-in-out;
 }
 .header__logo-svg {
+  transition: all 0.2s ease-in-out;
   fill: #ffffff;
 }
 .header__logo:hover {
@@ -231,6 +233,7 @@ h6 {
   display: block;
   font-size: 50px;
   color: #555555;
+  margin: 0 0 30px 0;
   transition: all 0.3s ease-in-out;
 }
 .doing__block:after {
@@ -272,12 +275,15 @@ h6 {
 .doing__title {
   font-size: 22px;
   transition: all 0.3s ease-in-out;
+  font-weight: 500;
+  margin: 0 0 20px 0;
 }
 .doing__text {
   color: #8c8c8c;
   padding: 0 13px;
   font-size: 14px;
   transition: all 0.3s ease-in-out;
+  margin: 0 0 30px 0;
 }
 .ideas {
   background: #fbfaf8;
@@ -568,30 +574,26 @@ h6 {
   font-size: 14px;
 }
 .video__icon {
-  width: 104px;
-  margin: 0 auto;
-}
-.video__icon:before {
-  content: '\f144';
-  display: block;
-  font-size: 80px;
-  width: 92px;
-  padding: 6px;
-  margin: 0 auto 45px auto;
-  font-family: 'Font Awesome 5 Free';
-  background: rgba(88, 90, 96, 0.5);
-  color: #ffffff;
-  border-radius: 50%;
-  cursor: pointer;
+  fill: #ffffff;
   transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  border-radius: 50%;
+  margin: 0 0 50px 0;
 }
-.video__icon:hover:before {
-  color: #c7b299;
-  background: rgba(64, 65, 69, 0.5);
+.video__icon-bg {
+  fill: rgba(88, 90, 96, 0.5);
 }
-.video__icon:active:before {
-  color: #a18059;
-  background: rgba(39, 40, 43, 0.5);
+.video__icon:hover {
+  fill: #c7b299;
+}
+.video__icon:hover .video__icon-bg {
+  fill: rgba(64, 65, 69, 0.5);
+}
+.video__icon:active {
+  fill: #a18059;
+}
+.video__icon:active .video__icon-bg {
+  fill: rgba(39, 40, 43, 0.5);
 }
 .mobile {
   padding: 80px 0 0 0;
@@ -905,12 +907,23 @@ h6 {
 .footer__dribbble {
   width: 270px;
   line-height: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  font-size: 0;
 }
 .footer__dribbble-link {
+  display: inline-block;
+  margin: 0 0 10px 0;
   height: 98px;
+}
+.footer__dribbble-link:nth-child(3),
+.footer__dribbble-link:nth-child(5) {
+  margin: 0 0 10px 10px;
+}
+.footer__dribbble-link:nth-child(4),
+.footer__dribbble-link:nth-child(5) {
+  margin: 0;
+}
+.footer__dribbble-link:nth-child(5) {
+  margin: 0 0 0 10px;
 }
 .footer__content:after {
   content: '';
@@ -1002,9 +1015,11 @@ h6 {
   align-items: center;
   color: #ffffff;
   margin: 0 0 30px 0;
+  transition: all 0.2s ease-in-out;
 }
 .footer__logo-svg {
   fill: #ffffff;
+  transition: all 0.2s ease-in-out;
 }
 .footer__logo:hover {
   color: #c7b299;

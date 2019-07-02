@@ -84,7 +84,9 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Raleway', serif;
     font-weight: 500;
     font-size: 34px;
+    transition: all 0.2s ease-in-out;
     &-svg {
+      transition: all 0.2s ease-in-out;
       fill: @default-color;
     }
     &:hover {
@@ -263,6 +265,7 @@ h1, h2, h3, h4, h5, h6 {
       display: block;
       font-size: 50px;
       color: @title-color;
+      margin: 0 0 30px 0;
       transition: all 0.3s ease-in-out;
     }
     &:after {
@@ -313,12 +316,15 @@ h1, h2, h3, h4, h5, h6 {
   &__title {
     font-size: 22px;
     transition: all 0.3s ease-in-out;
+    font-weight: 500;
+    margin: 0 0 20px 0;
   }
   &__text {
     color: @text-color;
     padding: 0 13px;
     font-size: 14px;
     transition: all 0.3s ease-in-out;
+    margin: 0 0 30px 0;
   }
 }
 
@@ -582,32 +588,24 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 14px;
   }
   &__icon {
-    width: 104px;
-    margin: 0 auto;
-    &:before {
-      content: '\f144';
-      display: block;
-      font-size: 80px;
-      width: 92px;
-      padding: 6px;
-      margin: 0 auto 45px auto;
-      font-family: 'Font Awesome 5 Free';
-      background: @video-btn-bg;
-      color: @default-color;
-      border-radius: 50%;
-      cursor: pointer;
-      transition: all 0.2s ease-in-out;
+    fill: @default-color;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    border-radius: 50%;
+    margin: 0 0 50px 0;
+    &-bg {
+      fill: @video-btn-bg;
     }
     &:hover {
-      &:before {
-        color: @hover-color;
-        background: darken(@video-btn-bg, 10%);
+      fill: @hover-color;
+      .video__icon-bg {
+        fill: darken(@video-btn-bg, 10%);
       }
     }
     &:active {
-      &:before {
-        color: darken(@hover-color, 20%);
-        background: darken(@video-btn-bg, 20%);
+      fill: darken(@hover-color, 20%);
+      .video__icon-bg {
+        fill: darken(@video-btn-bg, 20%);
       }
     }
   }
@@ -956,11 +954,20 @@ h1, h2, h3, h4, h5, h6 {
   &__dribbble {
     width: 270px;
     line-height: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    font-size: 0;
     &-link {
+      display: inline-block;
+      margin: 0 0 10px 0;
       height: 98px;
+      &:nth-child(3), &:nth-child(5) {
+        margin: 0 0 10px 10px;
+      }
+      &:nth-child(4), &:nth-child(5) {
+        margin: 0;
+      }
+      &:nth-child(5) {
+        margin: 0 0 0 10px;;
+      }
     }
   }
   &__content {
@@ -1059,8 +1066,10 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     color: @default-color;
     margin: 0 0 30px 0;
+    transition: all 0.2s ease-in-out;
     &-svg {
       fill: @default-color;
+      transition: all 0.2s ease-in-out;
     }
     &:hover {
       .header__logo-svg {
