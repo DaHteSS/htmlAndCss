@@ -40,15 +40,20 @@ h6 {
   font-weight: 500;
   font-size: 34px;
 }
-.header__logo:before {
-  content: url('../img/logo.png');
-  padding: 0 10px 0 0;
+.header__logo-svg {
+  fill: #ffffff;
 }
 .header__logo:hover {
   color: #c7b299;
 }
+.header__logo:hover .header__logo-svg {
+  fill: #c7b299;
+}
 .header__logo:active {
   color: #a18059;
+}
+.header__logo:active .header__logo-svg {
+  fill: #a18059;
 }
 .header__menu {
   margin-left: auto;
@@ -992,18 +997,26 @@ h6 {
   font-size: 34px;
   text-decoration: none;
   display: flex;
+  font-family: 'Raleway', serif;
+  font-weight: 500;
   align-items: center;
   color: #ffffff;
   margin: 0 0 30px 0;
 }
-.footer__logo:before {
-  content: url('../img/logo.png');
+.footer__logo-svg {
+  fill: #ffffff;
 }
 .footer__logo:hover {
   color: #c7b299;
 }
+.footer__logo:hover .header__logo-svg {
+  fill: #c7b299;
+}
 .footer__logo:active {
   color: #a18059;
+}
+.footer__logo:active .header__logo-svg {
+  fill: #a18059;
 }
 .footer__bottom {
   padding: 46px 0 49px 0;
