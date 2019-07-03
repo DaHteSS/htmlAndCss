@@ -35,14 +35,6 @@
           <a href="https://github.com/DaHteSS" target="_blank" class="myself__link myself__github"></a>
         </figcaption>
       </figure>
-      <!-- <div class="slider__nav">
-        <ul class="slider__list">
-          <li class="slider__dots"><a href="#" class="slider__link"></a></li>
-          <li class="slider__dots"><a href="#" class="slider__link"></a></li>
-          <li class="slider__dots"><a href="#" class="slider__link"></a></li>
-          <li class="slider__dots"><a href="#" class="slider__link"></a></li>
-        </ul>
-      </div> -->
     </div>
   </header>
   <main class="main">
@@ -52,35 +44,42 @@
         <p class="portfolio__subject">Все эти работы выполнил я ;)</p>
         <ul class="portfolio__list">
           <li class="portfolio__item">
-            <a href="#" class="portfolio__link portfolio__link_active">Все</a>
+            <a href="#" class="portfolio__link portfolio__link_active" data-index="0">Все</a>
           </li>
           <li class="portfolio__item">
-            <a href="#" class="portfolio__link">Готовые</a>
+            <a href="#" class="portfolio__link" data-index="1">Готовые</a>
           </li>
           <li class="portfolio__item">
-            <a href="#" class="portfolio__link">В процессе</a>
+            <a href="#" class="portfolio__link" data-index="2">В процессе</a>
           </li>
         </ul>
         <div class="portfolio__slider slider flex">
-          <div class="slider__content">
+          <div class="slider__content" data-done="2">
             <img src="img/slider__img_1.jpg" alt="Img" width="256" height="256" class="portfolio__img">
             <div class="slider__desc">
               <a href="https://dahtess.ru/creatives" target="_blank" class="slider__link"></a>
               <h2 class="slider__topic">creatives</h2>
             </div>
           </div>
-          <div class="slider__content">
+          <div class="slider__content" data-done="2">
             <img src="img/slider__img_2.jpg" alt="Img" width="256" height="256" class="portfolio__img">
             <div class="slider__desc">
               <a href="https://dahtess.ru/interior" target="_blank" class="slider__link"></a>
               <h2 class="slider__topic">interior</h2>
             </div>
           </div>
-          <div class="slider__content">
+          <div class="slider__content" data-done="2">
             <img src="img/slider__img_3.jpg" alt="Img" width="256" height="256" class="portfolio__img">
             <div class="slider__desc">
               <a href="https://dahtess.ru/merkury" target="_blank" class="slider__link"></a>
               <h2 class="slider__topic">merkury</h2>
+            </div>
+          </div>
+          <div class="slider__content" data-done="1">
+            <img src="img/slider__img_4.jpg" alt="Img" width="256" height="256" class="portfolio__img">
+            <div class="slider__desc">
+              <a href="https://dahtess.ru/waxom" target="_blank" class="slider__link"></a>
+              <h2 class="slider__topic">waxom</h2>
             </div>
           </div>
         </div>
