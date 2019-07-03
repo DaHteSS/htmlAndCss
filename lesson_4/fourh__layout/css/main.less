@@ -44,6 +44,10 @@
   }
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -1811,10 +1815,10 @@ h1, h2, h3, h4, h5, h6 {
     &__slider {
       &-arrow {
         &_left {
-          right: 47%;
+          right: 20%;
         }
         &_right {
-          left: 35%;
+          left: 11%;
         }
       }
     }
@@ -1845,7 +1849,7 @@ h1, h2, h3, h4, h5, h6 {
     &__logo {
       justify-content: center;
     }
-    &__title, &__text, &__time, &__link_center {
+    &__title, &__text, &__time, &__link_center, &__link_left {
       padding: 0 10px;
     }
     &__bottom {

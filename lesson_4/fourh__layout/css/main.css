@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:200,300|Raleway:500,800&display=swap');
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   padding: 0;
@@ -1640,10 +1643,10 @@ h6 {
     width: 91%;
   }
   .posts__slider-arrow_left {
-    right: 47%;
+    right: 20%;
   }
   .posts__slider-arrow_right {
-    left: 35%;
+    left: 11%;
   }
   .posts__img {
     width: 292px;
@@ -1669,7 +1672,8 @@ h6 {
   .footer__title,
   .footer__text,
   .footer__time,
-  .footer__link_center {
+  .footer__link_center,
+  .footer__link_left {
     padding: 0 10px;
   }
   .footer__bottom-flex {
