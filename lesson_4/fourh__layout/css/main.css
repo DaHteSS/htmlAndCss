@@ -467,6 +467,9 @@ h6 {
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
+.projects__btn:focus {
+  outline: none;
+}
 .projects__btn:last-child {
   margin: 0;
 }
