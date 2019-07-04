@@ -9,7 +9,7 @@
 @title-color: #555555;
 @gray-bg: #fbfaf8;
 @block-bg: #362f2d;
-@video-btn-bg: #000;
+@before-bg: #000;
 @footer-top-bg: #191919;
 @footer-btm-bg: #111111;
 @footer-link-color: #959595;
@@ -76,9 +76,25 @@ h1, h2, h3, h4, h5, h6 {
 .header {
   padding: 40px 0 65px 0;
   text-transform: capitalize;
-  background: url('../img/header__bg.jpg') no-repeat center top;
+  background: url('../img/header__bg.jpg') no-repeat center top / cover;
+  position: relative;
   &__flex {
     align-items: center;
+  }
+  &__container {
+    position: relative;
+    z-index: 2;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    background: @before-bg;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
   }
   &__logo {
     text-decoration: none;
@@ -119,7 +135,7 @@ h1, h2, h3, h4, h5, h6 {
   &__item {
     list-style-type: none;
   }
-  &__link, &__media {
+  &__link, &__media-link {
     text-decoration: none;
     color: @default-color;
     font-size: 14px;
@@ -132,20 +148,48 @@ h1, h2, h3, h4, h5, h6 {
     }
   }
   &__media {
-    font-size: 20px;
-    &:nth-child(1), &:nth-child(2) {
-      &:before {
+    display: flex;
+    &-link {
+      font-size: 20px;
+      &:nth-child(1) {
+        &:before {
+          font-family:"Font Awesome 5 Free";
+          font-weight:900;
+        }
+      }
+      &:nth-child(1) {
+        &:before {
+          content: '\f290';
+        }
+      }
+    }
+    &-search {
+      width: 20px;
+      height: 24px;
+      background: transparent;
+      border: none;
+      box-sizing: border-box;
+      transition: all 0.3s ease-in-out;
+      padding: 0 30px 0 0;
+      &:focus {
+        width: 150px;
+        cursor: auto;
+        outline: none;
+        border-bottom: 1px solid @default-color;
+        color: @default-color;
+      }
+    }
+    &-label {
+      margin: 0 10px;
+      cursor: pointer;
+      position: relative;
+      &:after {
+        position: absolute;
+        right: 0;
         font-family:"Font Awesome 5 Free";
         font-weight:900;
-      }
-    }
-    &:nth-child(1) {
-      &:before {
-        content: '\f290';
-      }
-    }
-    &:nth-child(2) {
-      &:before {
+        font-size: 20px;
+        color: @default-color;
         content: '\f002';
       }
     }
@@ -154,6 +198,9 @@ h1, h2, h3, h4, h5, h6 {
     margin: 200px 0 0 0;
     &-content {
       text-align: center;
+      &:focus {
+        outline: none;
+      }
     }
     &-dots {
       margin: 0;
@@ -188,9 +235,11 @@ h1, h2, h3, h4, h5, h6 {
           box-sizing: border-box;
           border: none;
           background: transparent;
-          outline: none;
           border-radius: 50%;
           cursor: pointer;
+          &:focus {
+            outline: none;
+          }
           &:before {
             content: '\f111';
             font-size: 15px;
@@ -206,11 +255,13 @@ h1, h2, h3, h4, h5, h6 {
       border: none;
       width: 48px;
       height: 48px;
-      outline: none;
       cursor: pointer;
       position: absolute;
       top: 20%;
       z-index: 1;
+      &:focus {
+        outline: none;
+      }
       &:hover {
         opacity: 0.8;
       }
@@ -430,13 +481,6 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     justify-content: center;
   }
-  &__item {
-    list-style-type: none;
-    margin: 0 10px 0 0;
-    &:last-child {
-      margin: 0;
-    }
-  }
   &__btn {
     display: block;
     text-decoration: none;
@@ -445,8 +489,13 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     box-sizing: border-box;
     border-radius: 5px;
+    margin: 0 10px 0 0;
     padding: 5px 20px;
+    cursor: pointer;
     transition: all 0.3s ease-in-out;
+    &:last-child {
+      margin: 0;
+    }
     &_active, &:hover {
       color: @default-color;
       background: @btn-bg;
@@ -586,6 +635,31 @@ h1, h2, h3, h4, h5, h6 {
   background-blend-mode: multiply;
   padding: 210px 0;
   text-align: center;
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: @before-bg;
+    opacity: 0.3;
+    z-index: 1;
+  }
+  &__src {
+    position: absolute;
+    object-fit: cover;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+  &__container {
+    position: relative;
+    z-index: 2;
+  }
   &__title {
     color: @default-color;
     font-weight: 500;
@@ -609,22 +683,25 @@ h1, h2, h3, h4, h5, h6 {
     cursor: pointer;
     border-radius: 50%;
     margin: 0 0 50px 0;
+    &_hidden {
+      display: none;
+    }
     &-bg {
-      fill: @video-btn-bg;
+      fill: @before-bg;
       opacity: 0.2;
       transition: all 0.2s ease-in-out;
     }
     &:hover {
       fill: @hover-color;
       .video__icon-bg {
-        fill: darken(@video-btn-bg, 10%);
+        fill: darken(@before-bg, 10%);
         opacity: 0.3;
       }
     }
     &:active {
       fill: darken(@hover-color, 20%);
       .video__icon-bg {
-        fill: darken(@video-btn-bg, 20%);
+        fill: darken(@before-bg, 20%);
         opacity: 0.4;
       }
     }
@@ -638,9 +715,10 @@ h1, h2, h3, h4, h5, h6 {
   &__flex {
     align-items: center;
   }
-  &__left {
-    line-height: 0;
+  &__img {
+    display: block;
     width: 40%;
+    height: auto;
   }
   &__right {
     width: 60%;
@@ -789,8 +867,10 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 0 40px 0;
   }
   &__content {
-    outline: none;
     position: relative;
+    &:focus {
+      outline: none;
+    }
   }
   &__time {
     &:before, &:after {
@@ -888,7 +968,9 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 14px;
     color: @hover-color;
     text-decoration: none;
-    outline: none;
+    &:focus {
+      outline: none;
+    }
     &:hover {
       color: darken(@hover-color, 10%);
     }
@@ -910,7 +992,9 @@ h1, h2, h3, h4, h5, h6 {
       &_left, &_right {
         background: transparent;
         border: none;
-        outline: none;
+        &:focus {
+          outline: none;
+        }
         &:hover {
           &:before, &:after {
             color: @hover-color;
@@ -1158,6 +1242,17 @@ h1, h2, h3, h4, h5, h6 {
     width: 950px;
   }
 
+  .header {
+    &__flex {
+      flex-wrap: wrap;
+    }
+    &__media {
+      width: 100%;
+      justify-content: center;
+      margin: 30px 0 0 0;
+    }
+  }
+
   .projects {
     &__text {
       padding: 0 200px;
@@ -1175,7 +1270,7 @@ h1, h2, h3, h4, h5, h6 {
   .mobile {
     &__img {
       height: auto;
-      width: 100%;
+      width: 40%;
     }
   }
   .posts {
@@ -1235,16 +1330,17 @@ h1, h2, h3, h4, h5, h6 {
         }
       }
     }
+    &__media {
+      width: 100%;
+      justify-content: center;
+      margin: 50px 0 0 0;
+    }
     &__text {
       padding: 0 145px;
     }
     &__btn {
       margin-bottom: 80px;
     }
-  }
-
-  .media {
-    margin: 50px 0 0 0;
   }
 
   .doing {
@@ -1315,19 +1411,15 @@ h1, h2, h3, h4, h5, h6 {
     &__list {
       padding: 0 0 0 20px;
     }
-    &__left {
-      order: 2;
-      margin: 50px 0 0 0;
-      width: 100%;
-      text-align: center;
-    }
     &__right {
       width: 100%;
       order: 1;
     }
     &__img {
       width: 30%;
+      margin: 50px auto 0 auto;
       height: auto;
+      order: 2;
     }
   }
 
@@ -1408,6 +1500,9 @@ h1, h2, h3, h4, h5, h6 {
       justify-content: center;
       flex-wrap: wrap;
     }
+    &__media {
+      margin: 50px 0 0 0;
+    }
     &__link {
       font-size: 16px;
       line-height: 2;
@@ -1429,10 +1524,6 @@ h1, h2, h3, h4, h5, h6 {
     &__btn {
       margin-bottom: 80px;
     }
-  }
-
-  .media {
-    margin: 50px 0 0 0;
   }
 
   .doing {
@@ -1494,7 +1585,7 @@ h1, h2, h3, h4, h5, h6 {
     &__list {
       flex-wrap: wrap;
     }
-    &__item {
+    &__btn{
       &:last-child {
         margin: 10px 0 0 0;
       }
@@ -1524,18 +1615,14 @@ h1, h2, h3, h4, h5, h6 {
     &__list {
       padding: 0 0 0 20px;
     }
-    &__left {
-      order: 2;
-      margin: 50px 0 0 0;
-      width: 100%;
-      text-align: center;
-    }
     &__right {
       width: 100%;
       order: 1;
     }
     &__img {
+      order: 2;
       width: 50%;
+      margin: 50px auto 0 auto;
       height: auto;
     }
   }
@@ -1649,11 +1736,11 @@ h1, h2, h3, h4, h5, h6 {
       font-size: 16px;
       line-height: 2;
     }
+    &__media {
+      margin: 50px 0 0 0;
+    }
     &__slider {
       margin: 120px 0 0 0;
-      &-content {
-        outline: none;
-      }
       &-arrow {
         &_left {
           left: 10px;
@@ -1669,10 +1756,6 @@ h1, h2, h3, h4, h5, h6 {
     &__btn {
       margin-bottom: 80px;
     }
-  }
-
-  .media {
-    margin: 50px 0 0 0;
   }
 
   .doing {
@@ -1737,7 +1820,7 @@ h1, h2, h3, h4, h5, h6 {
       flex-wrap: wrap;
       justify-content: center;
     }
-    &__item {
+    &__btn {
       margin: 0 10px 10px 0;
       &:nth-child(2), &:nth-child(4) {
         margin: 0 0 10px 0;
@@ -1776,19 +1859,15 @@ h1, h2, h3, h4, h5, h6 {
     &__item {
       padding: 0 10px 0 30px;
     }
-    &__left {
-      order: 2;
-      margin: 50px 0 0 0;
-      width: 100%;
-      text-align: center;
-    }
     &__right {
       width: 100%;
       order: 1;
     }
     &__img {
+      order: 2;
       width: 50%;
       height: auto;
+      margin: 50px auto 0 auto;
     }
   }
 

@@ -55,4 +55,13 @@ $(document).ready(function() {
 
     e.preventDefault();
   });
+
+  // video-bg
+  let video = $(".video__src"),
+      button = $(".video__icon");
+
+  button.on("click", ()=> {
+    video[0].play();
+    button.addClass('video__icon_hidden');
+  });
 })
