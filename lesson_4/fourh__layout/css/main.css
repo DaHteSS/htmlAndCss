@@ -141,19 +141,25 @@ h6 {
 .header__item {
   list-style-type: none;
 }
+.header__item:last-child {
+  display: none;
+}
 .header__link,
-.header__media-link {
+.header__media-link,
+.header__basket {
   text-decoration: none;
   color: #ffffff;
   font-size: 14px;
   padding: 0 10px;
 }
 .header__link:hover,
-.header__media-link:hover {
+.header__media-link:hover,
+.header__basket:hover {
   color: #c7b299;
 }
 .header__link:active,
-.header__media-link:active {
+.header__media-link:active,
+.header__basket:active {
   color: #a18059;
 }
 .header__media {
@@ -201,6 +207,14 @@ h6 {
   font-size: 20px;
   color: #ffffff;
   content: '\f002';
+}
+.header__basket {
+  font-size: 30px;
+}
+.header__basket:before {
+  content: '\f290';
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
 }
 .header__form {
   position: relative;
@@ -1685,6 +1699,10 @@ h6 {
     width: 100%;
     margin: 10px 0;
     text-align: center;
+  }
+  .header__item:last-child {
+    display: block;
+    margin: 30px 0 0 0;
   }
   .header__link {
     font-size: 16px;
