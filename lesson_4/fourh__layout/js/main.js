@@ -8,8 +8,6 @@ $(document).ready(function() {
     speed: 500,
     autoplay: true,
     autoplaySpeed: 5000,
-    fade: true,
-    cssEase: 'linear',
     responsive: [
       {
         breakpoint: 576,
@@ -49,7 +47,7 @@ $(document).ready(function() {
 
   let btn = $(".projects__btn");
 
-  btn.on("click", function(e) {
+  btn.on("click", e => {
     btn.removeClass("projects__btn_active");
     $(this).addClass("projects__btn_active");
 
@@ -62,6 +60,17 @@ $(document).ready(function() {
 
   button.on("click", ()=> {
     video[0].play();
-    button.addClass('video__icon_hidden');
+    button.addClass("video__icon_hidden");
   });
+
+    $('.header__open').on("click", () => {
+      $('.header__list').addClass('header__animation');
+      setTimeout(() => {
+        $('.overlay').css('display', 'block');
+      }, 500);
+    })
+    $('.header__close, .overlay').on("click", () => {
+      $('.header__list').removeClass('header__animation');
+      $('.overlay').css('display', 'none');
+    })
 })
