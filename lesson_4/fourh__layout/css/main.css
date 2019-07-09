@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:200,300|Raleway:500,800&display=swap');
 @keyframes slideTop {
   0% {
-    top: -470px;
+    top: -510px;
   }
   100% {
     top: 0;
@@ -9,7 +9,7 @@
 }
 @keyframes slideLeft {
   0% {
-    left: -450px;
+    left: -490px;
   }
   100% {
     left: 0;
@@ -72,6 +72,8 @@ h6 {
   display: none;
   color: #ffffff;
   font-size: 20px;
+  border: none;
+  background: transparent;
 }
 .header__open:focus,
 .header__close:focus {
@@ -1689,9 +1691,9 @@ h6 {
     display: block;
     width: 100%;
     height: 100vh;
-    top: -470px;
+    top: -510px;
     padding: 35px 0;
-    left: -450px;
+    left: -490px;
     background: #000;
     z-index: 5;
   }
