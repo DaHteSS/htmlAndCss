@@ -22,8 +22,252 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'HelveticaNeueLTProMd';
+  font-weight: 400;
 }
 .container {
   width: 1200px;
   margin: 0 auto;
+}
+.header {
+  font-family: 'HelveticaNeueLTProMd';
+  text-transform: capitalize;
+}
+.header__container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.header__list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.header__item {
+  list-style-type: none;
+}
+.header__item:nth-child(3) {
+  margin-right: 50px;
+}
+.header__item:nth-child(4) {
+  margin-left: 50px;
+}
+.header__link {
+  font-family: 'HelveticaNeueLTProLt';
+  font-weight: 400;
+  display: block;
+  padding: 22px 21px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #989696;
+  transition: all 0.4s linear;
+}
+.header__link:hover,
+.header__link_active {
+  color: #010101;
+}
+.header__link:active {
+  color: #4e4e4e;
+}
+.header__logo {
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  position: absolute;
+  margin-left: -9px;
+  line-height: 1.6;
+  width: 55px;
+  height: 55px;
+  text-transform: uppercase;
+  font-size: 40px;
+  color: #fff;
+  background: #121212;
+  transition: all 0.4s linear;
+}
+.header__logo:hover {
+  background: #4d4d4d;
+}
+.header__logo:active {
+  background: #333333;
+}
+.main__btn {
+  display: block;
+  border: none;
+  cursor: pointer;
+  margin: 0 auto 90px auto;
+  height: 60px;
+}
+.main__btn:focus {
+  outline: none;
+}
+.main__btn-inner {
+  position: relative;
+  display: block;
+  min-width: 10px;
+  min-height: 10px;
+  border-radius: 50%;
+  background: #e0e0e0;
+  padding: 0;
+}
+.main__btn-inner:before,
+.main__btn-inner:after {
+  position: absolute;
+  border-radius: 50%;
+  content: '';
+  min-width: 10px;
+  min-height: 10px;
+  left: 0;
+}
+.main__btn-inner:before {
+  background: #f0f0f0;
+  top: -20px;
+}
+.main__btn-inner:after {
+  background: #d0d0d0;
+  bottom: -20px;
+}
+.slider {
+  text-align: center;
+}
+.slider__content {
+  padding: 200px 0;
+}
+.slider__content:focus {
+  outline: none;
+}
+.slider__title {
+  font-size: 44px;
+  font-family: 'HelveticaNeueLTProLt';
+  font-weight: 400;
+  margin: 0;
+  color: #1d1e1f;
+}
+.slider__text {
+  font-family: 'MerriweatherLightItalic';
+  font-size: 16px;
+  margin: 0;
+  color: #898888;
+  margin: 0 0 40px 0;
+}
+.slider__btn {
+  padding: 21px 50px;
+  color: #000;
+  font-size: 15px;
+  border: 2px solid #000;
+  background: transparent;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.4s linear;
+}
+.slider__btn:focus {
+  outline: none;
+}
+.slider__btn:hover {
+  color: #fff;
+  background: #000;
+}
+.slider__btn:active {
+  border-color: #4d4d4d;
+  background: #4d4d4d;
+}
+.timeline {
+  background: #1d1d1d;
+  position: relative;
+}
+.timeline:before,
+.timeline:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 236px;
+  bottom: 0;
+}
+.timeline:before {
+  z-index: 2;
+  background: url('../img/buildings__white.png') no-repeat 62% 0;
+  bottom: -2px;
+}
+.timeline:after {
+  z-index: 1;
+  background: url('../img/buildings__black.png') no-repeat 85% 0;
+}
+.timeline__line {
+  background: #fff;
+  width: 5px;
+  height: 1170px;
+  margin: 0 auto;
+  position: relative;
+}
+.timeline__circle {
+  border-radius: 50%;
+  position: absolute;
+  box-sizing: border-box;
+  background: #1d1d1d;
+  border: 5px solid #fff;
+}
+.timeline__circle_1 {
+  top: 150px;
+}
+.timeline__circle_2 {
+  top: 242px;
+}
+.timeline__circle_3 {
+  top: 450px;
+}
+.timeline__circle_4 {
+  bottom: 425px;
+}
+.timeline__circle_small {
+  width: 24px;
+  height: 24px;
+  left: -9px;
+}
+.timeline__circle_big {
+  width: 46px;
+  height: 46px;
+  left: -20px;
+}
+.timeline__content {
+  position: absolute;
+  width: 387px;
+}
+.timeline__content_1 {
+  top: 140px;
+}
+.timeline__content_2 {
+  top: 230px;
+}
+.timeline__content_3 {
+  top: 455px;
+}
+.timeline__content_4 {
+  top: 710px;
+}
+.timeline__content_left {
+  right: 70px;
+}
+.timeline__content_left .timeline__title {
+  text-align: right;
+}
+.timeline__content_right {
+  text-align: left;
+  left: 65px;
+}
+.timeline__title {
+  color: #fff;
+  font-family: 'HelveticaNeueLTProRoman';
+  font-size: 48px;
+  margin: 0;
+}
+.timeline__text {
+  font-family: 'HelveticaNeueLTProLt';
+  margin: 0;
+  font-size: 15px;
+  color: #b7b7b7;
+}
+.team__title {
+  font-family: 'HelveticaNeueLTProLt';
+  font-size: 34px;
+  font-weight: 400;
+  color: #1d1e1f;
+  margin: 0;
 }
