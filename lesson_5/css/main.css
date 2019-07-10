@@ -271,3 +271,13 @@ body {
   color: #1d1e1f;
   margin: 0;
 }
+.footer {
+  text-align: center;
+  padding: 50px 0;
+}
+.footer__copiright {
+  margin: 0;
+  font-size: 14px;
+  font-family: 'HelveticaNeueLTProRoman';
+  color: #3b3b3b;
+}
