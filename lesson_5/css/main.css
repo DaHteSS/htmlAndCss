@@ -265,11 +265,81 @@ body {
   color: #b7b7b7;
 }
 .team__title {
+  text-align: center;
   font-family: 'HelveticaNeueLTProLt';
   font-size: 34px;
   font-weight: 400;
   color: #1d1e1f;
   margin: 0;
+}
+.team__subject {
+  text-align: center;
+  font-size: 16px;
+  font-family: 'MerriweatherLightItalic';
+  color: #898888;
+  margin: 0;
+}
+.contacts {
+  padding: 0 0 50px 0;
+}
+.contacts__title {
+  text-align: center;
+  font-family: 'HelveticaNeueLTProLt';
+  font-size: 34px;
+  font-weight: 400;
+  color: #1d1e1f;
+  margin: 0;
+}
+.contacts__subject {
+  text-align: center;
+  font-size: 16px;
+  font-family: 'MerriweatherLightItalic';
+  color: #898888;
+  margin: 0;
+}
+.contacts__form {
+  width: 70%;
+  margin: 0 auto;
+}
+.contacts__input,
+.contacts__textarea,
+.contacts__btn {
+  width: 100%;
+  box-sizing: border-box;
+}
+.contacts__input:focus,
+.contacts__textarea:focus,
+.contacts__btn:focus {
+  outline: none;
+}
+.contacts__input,
+.contacts__textarea {
+  color: #898888;
+  border: 1px solid #898888;
+  background: transparent;
+  font-family: 'HelveticaNeueLTProLt';
+  font-size: 15px;
+  margin: 0 0 20px 0;
+  padding: 0 20px;
+}
+.contacts__input,
+.contacts__btn {
+  height: 52px;
+}
+.contacts__input::placeholder {
+  text-align: center;
+}
+.contacts__textarea {
+  padding: 20px;
+  resize: none;
+  height: 195px;
+}
+.contacts__btn {
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 17px;
+  border: none;
+  background: #161616;
 }
 .footer {
   text-align: center;

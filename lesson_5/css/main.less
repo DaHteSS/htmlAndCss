@@ -3,7 +3,7 @@
 @header-link: #989696;
 @header-link-hover: #010101;
 @slider-topic-color: #1d1e1f;
-@slider-text-color: #898888;
+@text-color: #898888;
 @dark: #000;
 @main-btn: #e0e0e0;
 @main-btn-before: #f0f0f0;
@@ -181,7 +181,7 @@ body {
     font-family: 'MerriweatherLightItalic';
     font-size: 16px;
     margin: 0;
-    color: @slider-text-color;
+    color: @text-color;
     margin: 0 0 40px 0;
   }
   &__btn {
@@ -305,6 +305,7 @@ body {
 
 .team {
   &__title {
+    text-align: center;
     font-family: 'HelveticaNeueLTProLt';
     font-size: 34px;
     font-weight: 400;
@@ -312,7 +313,68 @@ body {
     margin: 0;
   }
   &__subject {
+    text-align: center;
+    font-size: 16px;
+    font-family: 'MerriweatherLightItalic';
+    color: @text-color;
+    margin: 0;
+  }
+}
 
+.contacts {
+  padding: 0 0 50px 0;
+  &__title {
+    text-align: center;
+    font-family: 'HelveticaNeueLTProLt';
+    font-size: 34px;
+    font-weight: 400;
+    color: @team-title;
+    margin: 0;
+  }
+  &__subject {
+    text-align: center;
+    font-size: 16px;
+    font-family: 'MerriweatherLightItalic';
+    color: @text-color;
+    margin: 0;
+  }
+  &__form {
+    width: 70%;
+    margin: 0 auto;
+  }
+  &__input, &__textarea, &__btn {
+    width: 100%;
+    box-sizing: border-box;
+    &:focus {
+      outline: none;
+    }
+  }
+  &__input, &__textarea {
+    color: @text-color;
+    border: 1px solid @text-color;
+    background: transparent;
+    font-family: 'HelveticaNeueLTProLt';
+    font-size: 15px;
+    margin: 0 0 20px 0;
+    padding: 0 20px;
+  }
+  &__input, &__btn {
+    height: 52px;
+  }
+  &__input::placeholder {
+    text-align: center;
+  }
+  &__textarea {
+    padding: 20px;
+    resize: none;
+    height: 195px;
+  }
+  &__btn {
+    text-transform: capitalize;
+    color: @light-color;
+    font-size: 17px;
+    border: none;
+    background: #161616;
   }
 }
 
