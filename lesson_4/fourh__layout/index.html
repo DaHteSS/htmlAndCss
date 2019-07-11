@@ -14,8 +14,7 @@
   <title>Waxom</title>
 </head>
 <body>
-  <div class="overlay"></div>
-  <header class="header">
+  <header class="header" id="home">
     <div class="container header__container header__flex flex">
       <a href="#" class="header__logo">
         <svg class="header__logo-svg"
@@ -32,28 +31,28 @@
             <button class="header__close"></button>
           </li>
           <li class="header__item">
-            <a href="#" class="header__link">Home</a>
+            <a href="#home" class="header__link scrollto">Home</a>
           </li>
           <li class="header__item">
-            <a href="#" class="header__link">About Us</a>
+            <a href="#about" class="header__link scrollto">About Us</a>
           </li>
           <li class="header__item">
-            <a href="#" class="header__link">Portfolio</a>
+            <a href="#portfolio" class="header__link scrollto">Portfolio</a>
           </li>
           <li class="header__item">
-            <a href="#" class="header__link">Features</a>
+            <a href="#features" class="header__link scrollto">Features</a>
           </li>
           <li class="header__item">
-            <a href="#" class="header__link">Blog</a>
+            <a href="#blog" class="header__link scrollto">Blog</a>
           </li>
           <li class="header__item">
-            <a href="#" class="header__link">Pricing</a>
+            <a href="#price" class="header__link scrollto">Pricing</a>
           </li>
           <li class="header__item">
-            <a href="#" class="header__link">Shortcodes</a>
+            <a href="#shortcodes" class="header__link scrollto">Shortcodes</a>
           </li>
           <li class="header__item">
-            <a href="#" class="header__link">Contact</a>
+            <a href="#contacts" class="header__link scrollto">Contact</a>
           </li>
           <li class="header__item">
             <a href="#" class="header__basket"></a>
@@ -86,7 +85,7 @@
     </div>
   </header>
   <main class="main">
-    <div class="doing">
+    <div class="doing" id="about">
       <div class="container doing__flex flex">
         <div class="doing__block">
           <h3 class="doing__title">Web & App Design</h3>
@@ -106,7 +105,7 @@
         </div>
       </div>
     </div>
-    <section class="ideas">
+    <section class="ideas" id="features">
       <div class="container">
         <h2 class="ideas__title">Waxom is Realization of your Ideas.</h2>
         <p class="ideas__text">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
@@ -115,7 +114,7 @@
         </div>
       </div>
     </section>
-    <aside class="buy">
+    <aside class="buy" id="price">
       <div class="container buy__flex flex">
         <div class="buy__content">
           <h2 class="buy__title"><span class="buy__desc">Waxom</span> Multipurpose WordPress Theme</h2>
@@ -124,7 +123,7 @@
         <a href="#" class="buy__btn">Purchase Now</a>
       </div>
     </aside>
-    <section class="projects">
+    <section class="projects" id="portfolio">
       <div class="container projects__flex flex">
         <h2 class="projects__title">Our Latest Projects.</h2>
         <p class="projects__text">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
@@ -216,7 +215,7 @@
         <a href="#" class="projects__btn_btm">Load More</a>
       </div>
     </section>
-    <section class="video">
+    <section class="video" id="shortcodes">
       <video class="video__src" poster="img/video__poster.jpg">
         <source src="video/video__bg.mp4" type="video/mp4">
         <source src="video/video__bg.ogv" type="video/ogg">
@@ -277,7 +276,7 @@
         </div>
       </div>
     </div>
-    <section class="posts">
+    <section class="posts" id="blog">
       <div class="container">
         <h2 class="posts__title">Recent Posts.</h2>
         <p class="posts__text">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
@@ -406,7 +405,7 @@
       </div>
     </div>
   </main>
-  <footer class="footer">
+  <footer class="footer" id="contacts">
     <div class="footer__top">
       <div class="container footer__flex flex">
         <div class="footer__left">

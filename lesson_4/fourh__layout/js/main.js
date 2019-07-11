@@ -63,14 +63,20 @@ $(document).ready(function() {
     button.addClass("video__icon_hidden");
   });
 
-    $('.header__open').on("click", () => {
-      $('.header__list').addClass('header__animation');
-      setTimeout(() => {
-        $('.overlay').css('display', 'block');
-      }, 500);
-    })
-    $('.header__close, .overlay').on("click", () => {
-      $('.header__list').removeClass('header__animation');
-      $('.overlay').css('display', 'none');
-    })
+  $('.header__open').on("click", () => {
+    $('.header__list').addClass('header__animation');
+  })
+  $('.header__close, .overlay').on("click", () => {
+    $('.header__list').removeClass('header__animation');
+  })
+
+  $("a.scrollto").click(function() {
+    var elementClick = $(this).attr("href")
+    var destination = $(elementClick).offset().top;
+    $("html:not(:animated),body:not(:animated)").animate({
+      scrollTop: destination
+    }, 800);
+    $('.header__list').removeClass('header__animation');
+    return false;
+  });
 })

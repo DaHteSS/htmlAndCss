@@ -18,15 +18,6 @@
 * {
   box-sizing: border-box;
 }
-.overlay {
-  display: none;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  z-index: 3;
-  background: #000;
-  opacity: 0.8;
-}
 body {
   margin: 0;
   padding: 0;
@@ -1079,7 +1070,7 @@ h6 {
 }
 .partners {
   padding: 130px 0;
-  background: url('../img/partners__bg.jpg') no-repeat 66% 54%;
+  background: url(../img/partners__bg.jpg) no-repeat center center;
   background-color: #878787;
   background-blend-mode: multiply;
 }
@@ -1761,9 +1752,6 @@ h6 {
   .ideas__img {
     width: 256.66666667px;
     height: 160.66666667px;
-  }
-  .buy {
-    display: none;
   }
   .buy__flex {
     flex-wrap: wrap;
