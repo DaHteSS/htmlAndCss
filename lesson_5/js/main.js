@@ -13,7 +13,7 @@ $(document).ready(function() {
     $("html:not(:animated),body:not(:animated)").animate({
       scrollTop: destination
     }, 800);
-    $('.header__list').removeClass('header__animation');
+    $(".header__list").fadeOut();
     return false;
   });
   $('.header__open').on("click", () => {
