@@ -13,13 +13,13 @@ $(document).ready(function() {
     $("html:not(:animated),body:not(:animated)").animate({
       scrollTop: destination
     }, 800);
-    $(".header__list").fadeOut();
+    $('.header__list').removeClass('header__animation');
     return false;
   });
   $('.header__open').on("click", () => {
-    $(".header__list").fadeIn();
+    $('.header__list').addClass('header__animation');
   });
   $('.header__close').on("click", () => {
-    $(".header__list").fadeOut();
+    $('.header__list').removeClass('header__animation');
   });
 });

@@ -51,6 +51,23 @@
   url('../fonts/Merriweather/MerriweatherLightItalic.svg#MerriweatherLightItalic') format('svg');
 }
 
+@keyframes slideTop {
+  0% {
+    top: -1000px;
+  }
+  100% {
+    top: 0;
+  }
+}
+@keyframes slideLeft {
+  0% {
+    left: -1000px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -79,6 +96,9 @@ body {
       font-family: 'Font Awesome 5 Free';
       font-weight: 900;
     }
+  }
+  &__animation {
+    animation: slideTop 1s forwards ease-in-out, slideLeft 1s forwards ease-in-out;
   }
   &__open {
     &:before {
@@ -850,9 +870,9 @@ body {
       z-index: 4;
       width: 100%;
       height: 100vh;
-      top: 0;
-      left: 0;
-      display: none;
+      display: block;
+      top: -1000px;
+      left: -1000px;
       text-align: center;
       overflow-y: auto;
     }
@@ -1001,9 +1021,9 @@ body {
       z-index: 4;
       width: 100%;
       height: 100vh;
-      top: 0;
-      left: 0;
-      display: none;
+      top: -1000px;
+      left: -1000px;
+      display: block;
       text-align: center;
       overflow-y: auto;
     }
